@@ -71,7 +71,7 @@ cp config/private-names.example.txt          config/private-names.txt           
 ## 6. 字体
 - 中文：**MiSans**（Regular/Medium/Semibold/Bold）放到 `$FONT_DIR/misans/`；思源黑体 / 思源宋体（Noto Sans/Serif CJK SC）作后备。
 - 英文：**Inter**、JetBrains Mono（代码/数字）。
-- 安装后 `fc-cache -f`（Linux）。`renderer/article-image-styles/house-dark/src/*.html` 里的 `file://${FONT_DIR}` 需要按你的路径替换。
+- 安装后 `fc-cache -f`（Linux）。`renderer/article-image-styles/house-dark/src/*.html` 是已生成的历史样稿（`file://${FONT_DIR}` 为占位）；重新生成请运行对应的 `.py`（读取 `FONT_DIR` 环境变量）。
 
 ## 7. Headless Chrome（配图渲染）
 ```bash

@@ -77,8 +77,6 @@ has_font 'Noto Sans CJK' || (sudo apt-get install -y -q fonts-noto-cjk >/dev/nul
 has_font '^Inter' || { mkdir -p "$FONT_DIR/inter"; t=$(mktemp -d); curl -fsSL --max-time 300 -o "$t/i.zip" https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip && unzip -j -o -q "$t/i.zip" 'extras/ttf/Inter-*.ttf' -d "$FONT_DIR/inter" || echo "WARN: install Inter manually"; rm -rf "$t"; }
 has_font 'JetBrains Mono' || (sudo apt-get install -y -q fonts-jetbrains-mono >/dev/null 2>&1 || echo "WARN: install JetBrains Mono manually")
 fc-cache -f >/dev/null 2>&1 || true
-# point house-dark HTML sources at this FONT_DIR
-grep -rl 'file://${FONT_DIR}' renderer/article-image-styles/house-dark/src 2>/dev/null | xargs -r sed -i "s#file://\${FONT_DIR}#file://$FONT_DIR#g"
 
 say "6/8 headless chrome + node renderer"
 command -v "$CHROMIUM" >/dev/null 2>&1 || (sudo apt-get install -y -q chromium >/dev/null 2>&1 || echo "WARN: install chromium/google-chrome manually")
