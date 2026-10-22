@@ -31,6 +31,7 @@
 ## 第 3 步 · box 安装
 ```bash
 cd /home/box
+gh auth status || echo '→ 请作者连接 GitHub 或在 box 终端运行 gh auth login'
 gh repo clone PraiseZhu/content-workflow   # 或 git clone https://github.com/PraiseZhu/content-workflow.git
 cd content-workflow
 bash grokbot/setup.sh          # 建 env 文件、目录、播种内容根、venv、字体、chrome、跑测试、渲染冒烟图
@@ -82,6 +83,8 @@ setup.sh 做的事与 `docs/12-install.md` 一致（Linux box 版）。内容根
 ---
 
 ## 日常怎么干活（速查）
+- **正文存放（硬规则）**：权威内容根是作者 Mac 上的 `/Users/praise/Obsidian/Praise Space/Praise/公众号`（通过 Mac 机器的 Shell/Read 读写）。box 上的 `~/content-work/公众号` 只是工具用的工作副本；Mac 离线时可先写 box，Mac 上线后同步回去，并告诉作者。
+- **两份 wewrite**：Mac 上 `~/AI-Agent/Claude/capabilities/source/skills/claude-active/wewrite` 是推微信草稿用的生产副本（有密钥）；仓库里的 `skill/wewrite` 是同一套代码的脱敏版。改工具时两边都改，并在仓库提交。
 - 写一篇：`workflows/article-pipeline/SKILL.md` 1→9 步；每篇文章目录见该 skill 的 Article folder；锁定行写 `article.yaml`。
 - 去 AI 味：`python deai-lint/deai_lint.py gate <稿> --stage draft --article article.yaml`；`python skill/wewrite/scripts/humanness_score.py <稿>` < 30。
 - 配图：写 `render/slots.zh.json` / `slots.en.json` → `python renderer/article-image-template/lib/render.py <文章目录> --check` → 渲染 → `--safe-overlay` 自检。示例：`examples/sample-article/`。

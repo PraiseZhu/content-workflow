@@ -69,12 +69,13 @@ say "5/8 fonts"
 if [ "${SKIP_FONTS:-0}" != 1 ] && [ ! -f "$FONT_DIR/misans/MiSans-Bold.ttf" ]; then
   mkdir -p "$FONT_DIR/misans"; tmp=$(mktemp -d)
   curl -fsSL --max-time 300 -o "$tmp/ms.zip" https://cdn.cnbj1.fds.api.mi-img.com/vipmlmodel/font/MiSans/MiSans.zip
-  for w in Regular Medium Semibold Bold; do unzip -j -o -q "$tmp/ms.zip" "*/MiSans-$w.ttf" -x '__MACOSX/*' -d "$FONT_DIR/misans"; done
+  for w in Regular Medium Semibold Bold; do unzip -j -o -q "$tmp/ms.zip" "*/MiSans-$w.ttf" -d "$FONT_DIR/misans"; done
   rm -rf "$tmp"
 fi
-fc-list | grep -qi 'Noto Sans CJK' || (sudo apt-get install -y -q fonts-noto-cjk >/dev/null 2>&1 || echo "WARN: install fonts-noto-cjk manually")
-fc-list | grep -qi 'Inter' || (sudo apt-get install -y -q fonts-inter >/dev/null 2>&1 || echo "WARN: install Inter manually")
-fc-list | grep -qi 'JetBrains Mono' || (sudo apt-get install -y -q fonts-jetbrains-mono >/dev/null 2>&1 || echo "WARN: install JetBrains Mono manually")
+has_font(){ fc-list : family 2>/dev/null | grep -i "$1" >/dev/null; }
+has_font 'Noto Sans CJK' || (sudo apt-get install -y -q fonts-noto-cjk >/dev/null 2>&1 || echo "WARN: install fonts-noto-cjk manually")
+has_font '^Inter' || { mkdir -p "$FONT_DIR/inter"; t=$(mktemp -d); curl -fsSL --max-time 300 -o "$t/i.zip" https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip && unzip -j -o -q "$t/i.zip" 'extras/ttf/Inter-*.ttf' -d "$FONT_DIR/inter" || echo "WARN: install Inter manually"; rm -rf "$t"; }
+has_font 'JetBrains Mono' || (sudo apt-get install -y -q fonts-jetbrains-mono >/dev/null 2>&1 || echo "WARN: install JetBrains Mono manually")
 fc-cache -f >/dev/null 2>&1 || true
 # point house-dark HTML sources at this FONT_DIR
 grep -rl 'file://${FONT_DIR}' renderer/article-image-styles/house-dark/src 2>/dev/null | xargs -r sed -i "s#file://\${FONT_DIR}#file://$FONT_DIR#g"

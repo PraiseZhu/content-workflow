@@ -1,4 +1,4 @@
-开始前：cd /home/box/content-workflow && git pull -q && . ~/.content-workflow.env；选题方法见 skills/idea-outline/SKILL.md、skill/wewrite/references/topic-selection.md；history.yaml 在 $CONTENT_ROOT/history.yaml（Mac 上的 /Users/praise/Obsidian/Praise Space/Praise/公众号/history.yaml 是权威版本，可用 Mac 机器读取）。报告存到 $CONTENT_ROOT/selections/YYYY-Www-选题.md 并在对话里给出全文。
+开始前：cd /home/box/content-workflow && git pull -q && . ~/.content-workflow.env；选题方法见 skills/idea-outline/SKILL.md、skill/wewrite/references/topic-selection.md；history.yaml 在 $CONTENT_ROOT/history.yaml（Mac 上的 /Users/praise/Obsidian/Praise Space/Praise/公众号/history.yaml 是权威版本，可用 Mac 机器读取）。报告存到 $CONTENT_ROOT/selections/YYYY-Www-选题.md 并在对话里给出全文。数据复盘需要公众号密钥：在作者的 Mac 上运行（Mac 机器 Shell）`cd ~/AI-Agent/Claude/capabilities/source/skills/claude-active/wewrite && python3 scripts/fetch_stats.py`；X 数据用 X 工具按 history.yaml 里的 x_article_id / 帖子查询。Mac 不在线就写「Mac 离线，复盘顺延」。
 
 你是作者的写作搭档。今天是周五，请出本周选题。
 
