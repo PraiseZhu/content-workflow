@@ -1,6 +1,8 @@
 # 12 · 安装 Install
 
-以下在 macOS / Linux 上验证过的步骤。所有 `<...>` 都是占位符，换成你自己的值；**不要把任何密钥提交进仓库**。
+**Linux / Grok Bot box 一键版**：`bash grokbot/setup.sh`（做完下面所有步骤并跑测试与渲染冒烟测试，详见 [grokbot/MIGRATION.md](../grokbot/MIGRATION.md)）。
+
+以下是手动步骤（macOS / Linux）。所有 `<...>` 都是占位符，换成你自己的值；**不要把任何密钥提交进仓库**。
 
 ## 1. 克隆与路径变量
 ```bash
@@ -14,6 +16,12 @@ export SECRETS_DIR="$HOME/.secrets"                   # mode 700，绝不入库
 mkdir -p "$CONTENT_ROOT"/{output,selections,preview} "$ARTICLES_DIR/config" "$STYLE_LIBRARY_DIR" "$SECRETS_DIR" && chmod 700 "$SECRETS_DIR"
 ```
 把这些写进 `~/.zshrc` / `~/.bashrc`。
+
+播种内容根（规则文件、playbook、image-style、选题池）：
+```bash
+cp -rn content/. "$CONTENT_ROOT/"
+cd skill/wewrite && for n in output history.yaml playbook.md; do ln -sfn "$CONTENT_ROOT/$n" $n; done && cd -
+```
 
 ## 2. Python 环境
 ```bash
@@ -58,7 +66,7 @@ cp config/private-names.example.txt          config/private-names.txt           
    ```
    或 OAuth 1.0a：`python toolkit/x_oauth1_setup.py`。
 4. 干跑：`python toolkit/cli.py x-draft <en.md> --payload-out /tmp/x.json`（不加 `--push` 不会建草稿；每 24h 最多建 10 篇，且无法用 API 删除）。
-> Linux 没有 `security` 命令：把 `toolkit/x_api.py` 的 `_keychain_get/_keychain_set` 换成读写 `$SECRETS_DIR` 下 600 权限文件，或用 `secret-tool`。
+> Linux 没有 `security` 命令时，`toolkit/x_api.py` 自动改用文件存储：`$X_SECRETS_DIR`（默认 `$SECRETS_DIR/x/`），每项一个 600 权限文件。macOS 上也可设 `WEWRITE_SECRET_BACKEND=file` 强制使用。
 
 ## 6. 字体
 - 中文：**MiSans**（Regular/Medium/Semibold/Bold）放到 `$FONT_DIR/misans/`；思源黑体 / 思源宋体（Noto Sans/Serif CJK SC）作后备。

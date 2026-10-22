@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "updated": "2026-07-26",
+  "windowDays": 7,
+  "windowNote": "14 天窗口 2026-07-26 实测把 lead 上下文推到 35.9 万 token 导致输出崩塌(当日烧 $164),回退 7 天;跨周演化靠 trajectory.md 线索,不靠扩窗",
+  "cards": { "min": 6, "masterCard": 1, "note": "≥10 是上下文爆炸的帮凶之一,降到 ≥6;不足从 pool 回捞,仍不足如实标缺口" },
+  "models": {
+    "judge": { "model": "session-default", "note": "聚类+判断挖掘(6a)用当前会话模型;判断质量靠证据利用率" },
+    "humanize": { "model": "moonshot/kimi-k3", "effort": "medium", "agent": "claude-code", "note": "6b 人话改写+6c 总纲提炼;跨家族原则:禁止判断模型自改充数" },
+    "factCheck": { "model": "claude-sonnet-5", "note": "成文后事实审校岗(交给 wewrite 阶段)" }
+  },
+  "workerDiscipline": {
+    "outputToFile": "runs/<date>/6b.md 与 6c.md;回传消息只当完成信号,丢失/重复直接读文件,不重跑",
+    "unavailableFallback": "lead 自改 + check-gates 机械校验兜底,产物如实标「⚠️ 同家族自改,未过跨家族人话关」"
+  },
+  "contextBudget": {
+    "principle": "阶段产物一律落 runs/<date>/ 文件;lead 只读上一阶段的摘要段,禁止回读全文",
+    "stageInputMaxKB": { "clusterInput": 8, "evidencePack": 24, "gateReport": 8 },
+    "abortRule": "任一阶段要求 lead 读入 >64KB → 停下拆分,不硬塞"
+  },
+  "paths": {
+    "selectionsDir": "${OBSIDIAN_ROOT}/${CONTENT_ROOT}/selections",
+    "automationDir": "${OBSIDIAN_ROOT}/${CONTENT_ROOT}/automation",
+    "blacklist": "${OBSIDIAN_ROOT}/${CONTENT_ROOT}/automation/blacklist.txt",
+    "trajectory": "${OBSIDIAN_ROOT}/${CONTENT_ROOT}/automation/trajectory.md",
+    "baseline": "${OBSIDIAN_ROOT}/${CONTENT_ROOT}/automation/baseline.md",
+    "pool": "${OBSIDIAN_ROOT}/${CONTENT_ROOT}/selections/pool.md",
+    "styleNotes": "${OBSIDIAN_ROOT}/${CONTENT_ROOT}/automation/style-notes.md"
+  }
+}

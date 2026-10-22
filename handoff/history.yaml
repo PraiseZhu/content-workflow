@@ -1,0 +1,276 @@
+articles:
+  - date: "2026-08-19"
+    updated: "2026-08-19"
+    title: "贵的模型出脑子,便宜的模型干活,有可能一开始你就错了"
+    topic_source: "周选题(2026-W34 卡 1)"
+    topic_id: "W34-01"
+    topic_keywords: ["模型分工", "薄交接", "上下文工程", "多智能体", "AI 协作"]
+    output_file: "output/2026-08-19-handoff-thin.md"
+    repush_2026_10_17: {media_id: "C_eLnWpNiNGCxzIiiWYqbSqI4RTGeMuZk--a0Z_lwNWs_CCEYUAFqrsMJACSav0k", thumb_media_id: "C_eLnWpNiNGCxzIiiWYqbTT6O_Z34Nn1x-LyVEcH3c2y7X5EGAKFVkbmeTktdEWs", note: "2026-10-17 draft/add 新草稿(旧草稿已不在草稿箱),仅草稿,未发布、未群发"}
+    x_en_file: "output/x/handoff-thin-en.md"
+    x_status: polished
+    framework: "观点型(PreWalk 现场交接实战复盘 + 行业判断)"
+    word_count: 6925
+    writing_persona: "亲历者 + 行业观察"
+    status: "ready"
+    publish_status: "draft_created"
+    media_id: "C_eLnWpNiNGCxzIiiWYqbVQbkrYYZmCLjfmZRmY_vXUaSjbJAZ0q39PCue-p5pXa"
+    cover_media_id: "C_eLnWpNiNGCxzIiiWYqbZaAMH1wLUFH4AwatfjqW799PuKVR48vTjdCFYLf8pzD"
+    evidence_source: "weekly-topics"
+    cover_image: "output/assets/handoff-thin/cover.png(terracotta 陶土橙 #CA6743,双手传递厚纸叠构图,16:9 补边,mivo 3 张候选中用户选第 3 张;其余 2 张按用户指令删除,全文仅保留此封面)"
+    ai_polish_status: "not_done_user_revised"
+    publish_file: "output/2026-08-19-handoff-thin-publish.md"
+    notes: "X 英语支线 2026-08-20:本地稿已落 output/x/handoff-thin-en.md + 清洗稿 output/x/handoff-thin.md。2026-08-20 晚按评估改 HOW:删 syllabus 开头,watched→I was in,brief→handoff,historical mess→old baggage,破折号 14→0,PreWalk 拆成短句;--en-gate PASS;清洗稿 45 blocks。未代发。封面仍需编辑器手动挂 cover-x-5x2.png。blacklist 未命中。publish-x --push 两次均 429:x-user-limit-24hour-remaining=0(限额 10),reset 2026-08-20 19:42 CST。周选题 W34 卡 1 成文。素材=PreWalk 现场交接实战(fable 终审 adopt-prewalk、grok 执行收尾)。收口采用候选 B(偏判断落点),定稿。图片决策:用户明确'只要一张封面',第 3 张 terracotta 构图胜出,node-thin/node-criterion 两张正文图全部移除。word_count 为去 frontmatter/图片行/HTML 注释后的字符数估算(含标点),非严格中文字数(文件总字符 7613)。publish_status:2026-08-19 已实测 Keychain service wewrite-postpixel-secret 存在非空值(退出码 0),发布链路可用;用户授权后已推送草稿箱。2026-08-19 用户两轮修改:① 开头改用户版本「贵的模型出方案,便宜的模型做执行,这好像是目前最通俗易懂的使用 agent 的方式。」② 「具体薄在哪」整节用户反馈完全没看懂,已全节重写去除内部黑话(4 个键/台账/取现场的函数/当场红/打头那组),按用户「例子可以不举」删除 4 键细节与个人经历,保留核心断点(按组取记录取空);「怎么加厚」节同步去黑话,PreWalk 首次出现加解释「先走进代码,再交接」。排版:主题 claude-warm(周选题流程要求,非 config 默认 voicer),加粗 17 处(seo-rules 关键数据/结论加粗)。草稿每次内容变更均删旧建新(draft/delete + draft/add),当前草稿 media_id 见上。已删除的旧草稿:首推污染版 C_eLnWpNiNGCxzIiiWYqbYew8yGLb3JKklMIP9H2AkwOILIJg1wFUkSZUhDO0dSO、voicer 版 C_eLnWpNiNGCxzIiiWYqbXdxvYS_0njNKIfF-Ck_XNEpJK9WqXf74ZTH-uCuSErB、claude-warm 旧版 C_eLnWpNiNGCxzIiiWYqbUZYwRzNA2Rtic0xJYqd5HVNXzRd6A1GzWe5wfTxok0c。"
+    stats: null
+
+  - date: "2026-07-28"
+    updated: "2026-07-29"
+    title: "当设计、开发、测试同时开始，设计师在做什么？"
+    topic_source: "周选题（2026-W32 卡 7）"
+    topic_id: "W32-05"
+    topic_keywords: ["设计流程", "并行校准", "设计师定位", "AI 协作", "Builder"]
+    output_file: "output/2026-07-28-design-development-acceptance.md"
+    repush_2026_10_17: {media_id: "C_eLnWpNiNGCxzIiiWYqbYsgLl3iFa6IVTeYUNmQPOr2yfVpEu8OULlo_FfG2FFS", thumb_media_id: "C_eLnWpNiNGCxzIiiWYqbf21-VlCQj183el9KfNJXy5N0yt5OtYJLE5tbLEB3ziJ", note: "2026-10-17 draft/add 新草稿(旧草稿已不在草稿箱),仅草稿,未发布、未群发"}
+    framework: "观点回访 + 两周工作验证"
+    word_count: 1510
+    writing_persona: "专业观察者"
+    status: "ready"
+    publish_status: "draft_created"
+    media_id: "C_eLnWpNiNGCxzIiiWYqbWCzrPI-9d5sHEkOjoggLNc1mWSu0-HXVuX6TuwqzNtj"
+    cover_media_id: "C_eLnWpNiNGCxzIiiWYqbbOBrsMUgMPV-7PwNP5N54RAyuBhQ_w0ApLBGZrh4AyL"
+    evidence_source: "weekly-topics"
+    cover_image: "output/assets/design-development-acceptance/cover.png（陶土橙底+手接接力棒，S-B 极简双物叠置，mivo 3 张候选中用户选①）"
+    ai_polish_status: "not_done_worker_unavailable"
+    notes: "对三个月前《设计流程没有死，它只是被压扁了》的回访。主轴：过去靠串行交付，现在靠并行校准。2026-07-28 用户已手动校准 output 正文；该版本为唯一权威稿，后续只能在此文件上继续修改，禁止用 AI 旧稿覆盖。2026-07-29：全文「验收」按用户命令改「测试」；CINDY 与 3000+ 状态经用户明确授权保留（逐篇授权，不推广为永久放行）；跨家族去 AI 味未执行——Cindy 会话内 start_team 报 PRECONDITION_FAILED，如实标注未去 AI 味，未用同家族自润充数（ledger cross-family-polish-unavailable-in-cindy）；排版前需先剥离 frontmatter，否则 WeWrite 会把元数据渲染进正文（ledger wewrite-preview-renders-frontmatter）。改稿 diff 已归档 automation/style-notes.md。"
+    stats: null
+
+  - date: "2026-04-18"
+    title: "用 Claude Code 搭完一年知识库,我看清了设计师未来该叫什么"
+    topic_source: "用户指定"
+    topic_keywords: ["vibe coding", "Claude Code", "知识库", "设计师", "Builder", "Product Engineer", "Design Engineer", "角色转型"]
+    output_file: "output/2026-04-18-cursor-figma-uiux-designer-future.md"
+    framework: "纯观点型(项目复盘 + 行业观察 + 名词辨析)"
+    enhance_strategy: "angle_discovery + density_boost"
+    word_count: 2150
+    media_id: null
+    writing_persona: "midnight-friend (revised: less self-doubt, more authoritative)"
+    exemplar_style: ["Rokey-tech-opinion", "Voicer-story-emotional"]
+    dimensions:
+      - "叙事视角: 第一人称项目复盘"
+      - "情绪基调: 冷静专业"
+      - "节奏: 中长句为主, 结论段单句切断"
+    closing_type: "action_oriented"
+    composite_score: 43.03
+    composite_score_note: "故意不优化 — 用户明确要求'专业,不要苦情戏';humanness_score 的低分项(self_correction/negative_emotion)正好是用户要砍掉的成分。本次按用户指令优先,跳过分数追逐。"
+    edit_anchors: 2
+    structural_features:
+      - "三大核心变化各成独立章节: 交付物 / 工具栈 / 流程结构"
+      - "Builder 角色从'交付物变化'章节自然引出, 不另立名词章节"
+      - "新旧流程对照含 ASCII 双图 + 7维差异表"
+    cover_image_status: "prompt_ready_not_generated"
+    cover_style_anchor: "Rokey: soft editorial illustration, low-saturation, hand-drawn, warm cream/sage/dusty-blue, mature restrained mood"
+    notes: "v2 重写版。v1 因苦情戏调性被用户明确否决(凌晨两点开头/装腔作势的自我怀疑/Cursor 改圆角等场景被定为'唱苦情戏')。v2 改用 Claude Code 搭知识库为真实切口,加入流程对照和名词章节,降自我怀疑频率。本次反馈已沉淀至 playbook.md。"
+    revision_history:
+      - "v1 (废稿): composite=31.72, 苦情戏被否"
+      - "v2 (废稿): composite=43.03, 专业调性 OK 但名词候选章节被否"
+      - "v3 (当前): 重构核心观点为'交付/工具/流程'三大变化, Builder 从交付物变化中引出"
+    stats: null
+
+  - date: "2026-04-19"
+    title: "设计流程没有死,它只是被压扁了"
+    topic_source: "用户指定"
+    topic_keywords: ["Claude Design", "设计流程", "Cowork", "Builder", "设计师转型", "交付物", "PR分支", "能力模型"]
+    output_file: "output/2026-04-19-design-process-flattened.md"
+    framework: "纯观点型(产品发布作引子)"
+    enhance_strategy: "angle_discovery + density_boost"
+    word_count: 2200
+    media_id: null
+    writing_persona: "midnight-friend (sharper, less hedge)"
+    exemplar_style: ["DDC-tech-opinion-005", "DDC-tech-opinion-006", "Rokey"]
+    dimensions:
+      - "叙事视角: 第一人称 + 行业观察"
+      - "情绪基调: 冷静中偶尔锋利"
+      - "节奏: 短句切断长段"
+    closing_type: "action_choice"
+    composite_score: 35.9
+    composite_score_note: "30-50区间,1轮定向修复后稳定。emotional_arc 受冷静观察基调约束保持 0,未强行升。"
+    edit_anchors: 0
+    structural_features:
+      - "六章结构对应用户提纲:发布引子 → 流程对比(含2张配图prompt) → 编剧vsBuilder → 交付物变化 → 工具+思维迁移 → 能力模型 → 结语"
+      - "封面图 + 章节内 2 张 Cowork 风格配图,全部使用 Anthropic 品牌色"
+      - "结语沿用上一篇 Cursor 文模板,Cursor 替换为 Cowork"
+    cover_image_status: "prompt_ready_not_generated"
+    cover_style_anchor: "Anthropic brand: terra cotta + burgundy + sand on cream, editorial vector, low saturation"
+    notes: "v3 续作。引子换为 Claude Design 4/17 发布 + Figma 跌7%。延续 v3 的'三大变化'框架但视角转为流程被压扁。DDC 风格首次入库后第一次启用,模仿其'我个人的答案是否定的'式锐度。"
+    stats: null
+
+  - date: "2026-05-04"
+    title: "我给Claude做了一条\"目标驱动链\""
+    subtitle: "AI 写代码真正难的不是生成，而是别把目标写丢了"
+    topic_source: "用户指定"
+    topic_keywords: ["VibeCoding", "目标驱动链", "Claude", "Codex", "代码审查", "工作流"]
+    output_file: "output/2026-05-04-Claude-goal-chain-v2.md"
+    publish_file: "output/2026-05-04-Claude-goal-chain-v2-publish.md"
+    framework: "纯观点 + 复盘"
+    enhance_strategy: "real_feel + density_boost"
+    word_count: 3110
+    media_id: "C_eLnWpNiNGCxzIiiWYqbWpON5fdhCsMl2HuuTA7MQGHlr4gtPlXuCQIu7alBszv"
+    cover_media_id: "C_eLnWpNiNGCxzIiiWYqbZ3SN68BAkqs6uPFi1ufM8unLFFzN6tFtwaiWg0BqupK"
+    writing_persona: "midnight-friend"
+    dimensions:
+      - "叙事视角: 第一人称亲历"
+      - "类比域: 链条/契约/方向盘"
+      - "情绪基调: 克制冷静 + 轻度自嘲"
+      - "节奏: 短句独立成段，长短交替"
+    closing_type: "image_handoff"
+    iterations:
+      - "v1 原版（让它停下来主线）"
+      - "v2 硬核版（技术密度加重）"
+      - "v3 目标驱动链 v1（链条骨架引入）"
+      - "v4 目标驱动链 v2（用户定稿，散文化收尾）"
+    user_edits:
+      - "标题 VibeCoding → Claude（H1 正文）"
+      - "重写开头段，用'AI 越会写就越接近完成'反向钩子"
+      - "段落节奏改成短段递进"
+      - "插入 4 张实拍图（封面 + 3 张内文配图）"
+    capsule_fields_used:
+      - "REVIEW_DOMAIN"
+      - "REVIEW_FOCUS"
+      - "SUCCESS_CRITERIA"
+      - "OUT_OF_SCOPE"
+      - "USER_ACCEPTED_DECISIONS"
+      - "KNOWN_LIMITATIONS"
+    blockers_encountered:
+      - "PIL 缺失 → 降级，用户自备图"
+      - "WeChat IP 白名单未授权 → 用户加白后传播延迟约 2 分钟，重试通过"
+    publish_target: "草稿箱（Post Pixel）"
+    publish_status: "draft_created"
+    cover_image_status: "user_provided"
+    notes: "用户深度共创：从我的初稿出发，经过 4 轮迭代，最后用户自己写了定稿 v2 + 编辑器中再调一稿。中间机制反复对齐：从'让它停下来'升级为'目标驱动链'，硬停止从主角变成链的最后一环。capsule 一词扩入英文白名单。"
+    stats: null
+
+  - date: "2026-05-04"
+    title: "我给Claude做了一条\"目标驱动链\""
+    subtitle: "AI 写代码真正难的不是生成，而是别把目标写丢了"
+    revision_of: "C_eLnWpNiNGCxzIiiWYqbWpON5fdhCsMl2HuuTA7MQGHlr4gtPlXuCQIu7alBszv"
+    revision_reason: "用户在编辑器中修订了开头段、加了 Goal Anchor Chain 副标题、要求换 claude-warm 主题"
+    output_file: "output/2026-05-04-Claude-goal-chain-v2.md"
+    repush_2026_10_17: {media_id: "C_eLnWpNiNGCxzIiiWYqbRMNjwj0W1dPO2i28XwPyfWFnmwyut37AovLg2GpH9kW", thumb_media_id: "C_eLnWpNiNGCxzIiiWYqbeDOOKr3FRj0_YseuOOIxkbfIwEv6hIQhri9kV7xLtHT", note: "2026-10-17 draft/add 新草稿(旧草稿已不在草稿箱),仅草稿,未发布、未群发"}
+    publish_file: "output/2026-05-04-Claude-goal-chain-v2-publish.md"
+    theme: "claude-warm"
+    word_count: 3127
+    media_id: "C_eLnWpNiNGCxzIiiWYqbS7EIXUaGLNXWvpWVkyve_oQDcaoz9rqnCQSTqnlHeou"
+    cover_media_id: "C_eLnWpNiNGCxzIiiWYqbUF0KnGiTICwsUC3FFDtrc-7OR5fmq8jjjZyPF-236Bi"
+    cover_image: "output/Attachments/image_20260504023810.png"
+    publish_status: "draft_created_revision"
+    notes: "claude-warm 主题与封面赤陶橙色调一致；用户在 voicer 草稿基础上做了第二次发布。旧 voicer 草稿仍在草稿箱，由用户手动删除。"
+    stats: null
+
+  - date: "2026-07-27"
+    title: "自动审 PR 最重要的能力，是知道什么时候别审"
+    topic_source: "周选题（2026-W31 卡 6）"
+    topic_keywords: ["自动审 PR", "AI 代码审查", "自动化治理", "GitHub", "CI/CD"]
+    output_file: "output/2026-07-27-automation-pipeline-governance.md"
+    repush_2026_10_17: {media_id: "C_eLnWpNiNGCxzIiiWYqbc7ePiDEcoLgMfWuaAeLYsQdSuVQ9oo0SpzSq8cJYsUF", thumb_media_id: "C_eLnWpNiNGCxzIiiWYqbUeJTT5iDu0CSo-8YU_hoNb-bpa_MDDdy1CA1Hv8wJP3", note: "2026-10-17 draft/add 新草稿(旧草稿已不在草稿箱),仅草稿,未发布、未群发"}
+    framework: "纯观点 + 工程复盘"
+    enhance_strategy: "角度发现 + 密度强化"
+    word_count: 1352
+    media_id: null
+    writing_persona: "midnight-friend（R001 调低不确定性）"
+    dimensions:
+      - "叙事视角: 第一人称亲历"
+      - "情绪基调: 克制冷静"
+      - "节奏: 短句密集"
+    closing_type: "action_oriented"
+    composite_score: 45.09
+    theme: "claude-warm"
+    cover_image: "output/assets/2026-07-27-automation-pipeline-governance/cover-padlock.png（绿底实心挂锁+线稿钥匙，mivo 生成，用户选定）"
+    publish_status: "local_only_wechat_secret_missing"
+    publish_status_correction: "2026-07-29 复核：这是误降级。AppSecret 一直在 macOS Keychain（service wewrite-postpixel-secret），只是 config.yaml 里没有；当时未查 keychain 就判 skip_publish，导致用户白手动上传一次。修法见 ledger wechat-secret-in-keychain-not-config。"
+    notes: "周选题自动化第二篇。素材源=Mivo 自动 PR 审查工程证据（securityReviewPaths 自审禁区/loopPrExclusion 身份核验/产品架构门）。跨家族去 AI 味未执行（worker 不可用，如实标注）。内文配图用户决定全部取消，仅保留封面。推送降级：config.yaml 缺 wechat.secret，本地 md+html 成品待手动上传或补配。"
+    stats: null
+
+  - date: "2026-10-11"
+    title: "Grok Bot 自动化 QA 实践经验和复盘"
+    topic_source: "用户指定"
+    topic_keywords: ["自动化 QA", "Grok Bot", "AI 代码审查", "PR 测试", "报告可信度"]
+    output_file: "output/2026-10-11-automated-qa.md"
+    repush_2026_10_17: {media_id: "C_eLnWpNiNGCxzIiiWYqbVjXOeVDwCxxdIYuil8T3fvbqPr0POdBpZiNA_ZbQpLB", thumb_media_id: "C_eLnWpNiNGCxzIiiWYqbRVgSGICtnugESwyaogNlUZwvWi2wMTmGjjIi4G0-CcL", note: "2026-10-17 draft/add 新草稿(旧草稿已不在草稿箱),仅草稿,未发布、未群发"}
+    x_en_file: "crosspost/x/2026-10-11-automated-qa/x-article-en.md"
+    x_status: pushed
+    x_article_id: "2109342826853216256"  # 2026-10-12 新 X 草稿(未发布):表格转加粗列表、4 张图+封面 header-5x2.png 已经 API 上传、保留粗体
+    old_x_article_id: "2109339386118848512"  # 旧 X 草稿(表格是裸 | 文本、无图无封面),未删除;X API 无更新/删除接口
+    x_cover_image: "crosspost/x/2026-10-11-automated-qa/header-5x2.png"
+    x_media_ids: {fig1: "2109342799460220928", fig2: "2109342804833136641", fig3: "2109342810289876992", fig4: "2109342815893528576", cover: "2109342822554009600"}
+    framework: "时间线复盘 + 经验沉淀"
+    word_count: 3571
+    media_id: "C_eLnWpNiNGCxzIiiWYqbWAhGxOV5fTEhUFss7uBU-xyXZzZCrDIZSHGOHVaYawz"  # 2026-10-12 紧凑版新草稿
+    cover_media_id: "C_eLnWpNiNGCxzIiiWYqbfScExpqkyU87Wacdv_dCLfSBcMD9CDa5_BMVNoMYRz5"
+    old_media_id: "C_eLnWpNiNGCxzIiiWYqbT5-BbuXtU6kchqv7JBgUESnQOJrK7qZhkDvIL18VI8f"  # 旧草稿仍在草稿箱，未删除（旧摘要/旧主题）
+    old_cover_media_id: "C_eLnWpNiNGCxzIiiWYqbaI_b9B-xJC3d9NY8-OwxqHCbDP8tkGrvyYfVTZCA1xf"
+    cover_image: "output/assets/2026-10-11-automated-qa/cover-2.35.png"
+    theme: "claude-warm-compact"
+    digest: "代码越来越便宜，团队能跑多快，取决于测试这一环能不能自己转起来。"
+    old_digest: "两个 bot，55 分钟跑通自动化 QA；剩下十几个小时，都在问这份报告敢不敢信。"
+    composite_score: 23.97
+    publish_target: "草稿箱"
+    publish_status: "draft_created"
+    blockers_encountered:
+      - "WeChat IP 白名单 40164（出口 120.253.194.73）→ 用户加白后重推成功"
+      - "2026-10-12 WeChat IP 白名单 40164（出口变为 120.253.194.74）→ 用户加白后重推成功"
+    notes: "2026-10-12 Writing Bot 重写版（终稿未改字）以 claude-warm-compact 重推为新草稿，仅草稿，未发布、未群发；旧草稿保留见 old_media_id。此前：已推草稿箱，未发布、未群发。正文 4 张图（fig1-4）已上传；事实校正版（21 项检查/私信与工单规则/上海时间）。正文 status 按 wewrite 规定标 published，实际仅为草稿。"
+    x_out_file: "crosspost/x/2026-10-11-automated-qa/x-article.md"
+    repush_attempt_2026_10_12:
+      by: "Writing Bot rewrite（终稿未改字）"
+      theme: "claude-warm-compact（经 toolkit/cli_compact.py：不自动加中英空格、列表/图片/表格收紧）"
+      digest_planned: "代码越来越便宜，团队能跑多快，取决于测试这一环能不能自己转起来。"
+      wechat_result: "前两轮 40164（出口 120.253.194.74 未生效）；用户确认加白后第三轮成功，新草稿 media_id 见上，仅草稿"
+      x_result: "本轮未推（Keychain 缺 x-articles-access-token）；本地清洗稿 x-article.md。X 草稿后来另行创建，以 x_status/x_article_id 为准"
+      desensitization: "公众号 automation/blacklist.txt + box gate/blacklist.txt 均 0 命中"
+    stats: null
+  - date: "2026-10-16"
+    title: "下个月出新模型，你的工作流变好还是变坏？"
+    topic_source: "本周选题"
+    output_file: "output/2026-10-16-model-upgrade-workflow.md"
+    repush_2026_10_17: {media_id: "C_eLnWpNiNGCxzIiiWYqbXWB8LvnDemXA7wR4Moa4IcofN7bXs8P_r80yTovdxgx", thumb_media_id: "C_eLnWpNiNGCxzIiiWYqbdE6mLMXxhvEEEZQsWJHzDmWZE2KzX9GMATddZRlis4o", note: "2026-10-17 draft/add 新草稿(旧草稿已不在草稿箱),仅草稿,未发布、未群发"}
+    x_en_file: "crosspost/x/2026-10-16-model-upgrade-workflow/x-article-en.md"
+    x_out_file: "crosspost/x/2026-10-16-model-upgrade-workflow/x-article.md"
+    x_status: pushed
+    x_article_id: "2111184957389656064"  # 2026-10-17 未发布草稿 @PraiseBuild,3 张图+封面经 API 上传
+    x_cover_image: "crosspost/x/2026-10-16-model-upgrade-workflow/images/en/header-x-1500x600.png"
+    x_media_ids: {fig1: "2111184931825295360", fig2: "2111184939094003712", fig3: "2111184946559938560", cover: "2111184953774153728"}
+    media_id: "C_eLnWpNiNGCxzIiiWYqbY2S4zKmdLkmCi54RWl7eJLDAYb8ayT1gnkZspzNXsB1"  # 2026-10-17 草稿,已剥离 frontmatter
+    old_media_id: "C_eLnWpNiNGCxzIiiWYqbUoi6xwfvqasiikM3aj42Wv84aJtSUp4lLGLV_2hQsk0"  # 首推正文顶部漏出 frontmatter;2026-10-17 已确认含 topic_id 后经 draft/delete 删除(errcode 0)
+    draft_check_2026_10_17: "删除废稿后 draft/get 好稿返回 40007 invalid media_id,draft/batchget total_count=0(草稿箱已空,含 10-11 草稿);原因未知,可能已在后台发布或删除,freepublish 接口 48001 无权限无法确认"
+    cover_image: "output/assets/model-upgrade-workflow/cover-wechat-2350x1000.png"
+    theme: "claude-warm-compact"
+    digest: "模型升级时，迁就旧模型的补丁会清零；规则、评测集、数据和审核才会复利。"
+    composite_score: 16.91
+    en_composite_score: 19.3
+    publish_target: "草稿箱"
+    publish_status: "draft_created"
+    notes: "2026-10-17 删除 3 条【待补】/[TODO](用户选择删除),备份 *.bak-predel;EN 补 3 张图引用与 cover_image。仅草稿,未发布。"
+    stats: null
+  - date: "2026-10-17"
+    title: "让 AI 审查 AI，最怕它们互相点头"
+    topic_source: "行业代码审查改进 + 自建服务端代码审查机器"
+    output_file: "output/2026-10-17-ai-review-ai.md"
+    x_en_file: "crosspost/x/2026-10-17-ai-review-ai/x-article-en.md"
+    x_out_file: "crosspost/x/2026-10-17-ai-review-ai/x-article-en.x.md"
+    x_status: pushed  # 先前 503 根因: 转换器输出 header-three(X 后端不支持),已改为 ##->header-one、###->header-two
+    x_article_id: "2111461008090996736"  # 2026-10-17 未发布草稿 @PraiseBuild,4 张图+封面经 API 上传,53 blocks
+    x_cover_image: "crosspost/x/2026-10-17-ai-review-ai/images/en/header-x-1500x600.png"
+    x_media_ids: {fig1: "2111460971827089409", fig2: "2111460980156944384", fig3: "2111460988394557441", fig4: "2111460996481163264", cover: "2111461004202881025"}
+    x_media_ids_attempt2: {fig1: "2111447501517844480", fig2: "2111447510304878593", fig3: "2111447517711970305", fig4: "2111447525781889024", cover: "2111447533063184385"}
+    media_id: "C_eLnWpNiNGCxzIiiWYqbQsFLI0Tyts1YAE1hxeEhq8jqEmXlEu5hLLjK1mT3YHn"  # 草稿;draft/get 已验证:无 frontmatter、4 图、封面、2.35:1 与 1:1 裁切
+    thumb_media_id: "C_eLnWpNiNGCxzIiiWYqbTULXAqtKmMRR9KWxyJHfrMB-DPZW9o_5b-QcE86iyx7"
+    cover_image: "output/assets/ai-review-ai/cover-wechat-2350x1000.png"
+    cover_square: "output/assets/ai-review-ai/cover-square-1000x1000.png"
+    theme: "claude-warm-compact"
+    digest: "AI审查AI，最怕互相点头。一条意见只有经得起核验，才有资格拦下PR。"
+    composite_score: 20.8
+    en_composite_score: 19.7
+    publish_target: "草稿箱"
+    publish_status: "draft_created"
+    notes: "2026-10-17 H2 改为「我的审查机：一个 PR 要过哪几关」(EN: Inside my review machine: the gates a PR passes),草稿经 draft/update 原地更新(errcode 0),media_id 不变。v3(服务端代码审查机器版)为终稿;v1/v2 备份 .bak-v1/.bak-v2。EN 图由 box render/build_en.py 生成。仅草稿,未发布、未群发。X 草稿待重推。"
+    stats: null

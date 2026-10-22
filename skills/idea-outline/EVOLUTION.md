@@ -1,0 +1,133 @@
+# idea-outline 自进化台账
+
+自动生成:由 scripts/evo-note.mjs 从 evolution/ledger.json 再生成,**手改本文件会被覆盖**。
+进化目标:让 选题/中心思想/提纲 的提炼越来越符合口味——严谨的 AI 实战干货分享。
+
+## 口味台账(用户的每一次否决/改写/拍板;≥2 次同指纹才升级为硬规则)
+
+- `serious-tone-no-clickbait` **严肃论证型基调,拒绝话题性与爆文腔** — 出现 2 次,首见 2026-07-25,最近 2026-07-26,status: adopted,落于 taste-rules.json#titleStyle
+  - 原话:「文笔可以严肃认真一点;不要太具备话题性 感觉轻飘飘」
+  - 现象:评 13 号卡提纲时拍板;标题评分公式的情绪/反常识维度在结构上奖励爆文腔,已豁免严肃向选题
+- `single-axis-required` **必须有一句中心思想和贯穿全局的轴,拒绝多面并列平铺** — 出现 2 次,首见 2026-07-25,最近 2026-07-26,status: adopted,落于 taste-rules.json#masterCard.singleAxis
+  - 原话:「你的提纲我完全找不到中心思想 和贯穿全局的轴」
+  - 现象:「五重同变」五面并列被否;观察素材不是文章结构;轴回指测试:每节答不出为轴出什么力就删或换轴
+- `no-translationese-abstract-nouns` **禁抽象名词对抽象名词说话(翻译味的病根)** — 出现 3 次,首见 2026-07-26,最近 2026-07-29,status: adopted,落于 taste-rules.json#bannedAbstractNouns + concreteNounRequired
+  - 原话:「现在选题 中心思想和提纲都让人看不懂 / 选题和中心思想和提纲都浓浓的翻译味」
+  - 现象:四模型 A/B 实测:通病是「稀缺性/定位/交付形态」当主宾语;合格样式=「以前工程师会替你补,AI 不问,直接猜」;中心思想必须含具体的人或物。2026-07-29 第 3 次命中,战场从选题扩到正文:卡7 成文时自造了「交接缝/通过线/体验判断生产负责人/生产链/同跑/工程感」六个词,用户逐个毙掉——规则同源(读者认不出所指的抽象词),已把这六词补进 bannedAbstractNouns.patterns
+- `four-dimensions-required` **选题视角必须带时间/行业/角色/未来四维,不许只讲单周操作** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: adopted,落于 taste-rules.json#fourDimensions
+  - 原话:「目前选题和提纲还是视角太狭隘,我希望加入时间维度/设计师行业维度/设计师角色/对未来思考的维度」
+  - 现象:5 问审「判断是否成立」,四维审「判断站得够不够远」;每维带防套话硬约束
+- `synthesize-upward-master-card` **所有选题必须汇总向上提炼成一张总纲卡,分卡标归属分支** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: adopted,落于 taste-rules.json#masterCard
+  - 原话:「所有选题需要汇总起来向上提炼」
+  - 现象:抄轴→提炼总纲一句→建树→验树;禁硬挂;总纲能被任一分卡整句替代=没提炼
+- `deliver-full-outline-proactively` **交付必须自带 选题+中心思想+提纲 全量,禁止指路式消息** — 出现 2 次,首见 2026-07-25,最近 2026-07-26,status: adopted,落于 SKILL.md#交付
+  - 原话:「不自动给选题也不自动给提纲? 我都要主动问?」
+  - 现象:筛选者不该为看内容追问任何一句;只给标题=逼人追问
+- `numbers-restraint` **全文关键数字 ≤3,数字轰炸是爆文质感** — 出现 1 次,首见 2026-07-25,最近 2026-07-25,status: adopted,落于 taste-rules.json#lengths.keyNumbersPerArticleMax
+  - 原话:「(2026-07-25 严肃基调拍板时一并定)满篇 commit 数/账单数是爆文质感」
+- `generalize-project-background` **背景交代用「做了几个项目」泛化口径,禁项目名/任务名** — 出现 1 次,首见 2026-07-25,最近 2026-07-25,status: adopted,落于 taste-rules.json#requiredFields(脱敏项) + blacklist 闸门
+  - 原话:「背景交代做了几个项目 不用说具体项目名字和任务名字」
+  - 现象:与取材红线(机制可写/业务数据不可写/公司项目不出真名)同源
+- `audience-designer-relevance` **读者是设计师;运维味选题(工作树/分支/派工)不得占满前排** — 出现 1 次,首见 2026-07-25,最近 2026-07-25,status: adopted,落于 taste-rules.json#quotas
+  - 原话:「3 个我都选不上(12 张里 9 张工程味被毙)」
+  - 现象:W30 v2 实测:12 卡 10 张是 AI 协作运维学;读者相关度=低不得进 S 级;同族 ≤2
+  - 备注:2026-07-26 范围被 topic-lens-ai-era 收窄:保留「读者可懂、运维黑话不得刷屏」;「设计本行配额 ≥3」作废
+- `pick-visual-pointing-over-text` **选中指认式表达卡（给 AI 看比跟 AI 说管用）** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: open
+  - 原话:「d（选中卡 D）」
+  - 现象:2026-W30 v6 正样本：用户选中「圈红比说话管用」。卖点=反直觉+设计师天然优势+实操性强。累积判据：指认式表达类选题有市场
+- `topic-lens-ai-era-not-designer-only` **选题判断维度=AI 时代的行业规则变化,不锁死在设计师职业视角** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: adopted,落于 taste-rules.json#fourDimensions + quotas
+  - 原话:「我觉得这个 skill 的选题维度 要改一下 不能集中在设计师的的维度 而是 ai 时代」
+  - 现象:2026-07-26 用户拍板。设计师亲历仍是最硬的证据来源,但它是样本不是边界;判断的量级要落在「AI 时代什么行业规则在变」。部分覆盖 audience-designer-relevance(该条的读者可懂性要求仍有效,设计本行配额作废)
+  - 备注:规则已落进 taste-rules.json#fourDimensions.lens 与 quotas,状态补正为 adopted
+- `output-style-anatolikopadze` **输出风格参考=@AnatoliKopadze 长文:单句成段/硬数字/直呼读者/一句落差句收口** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: adopted,落于 taste-rules.json#outputStyle + references/output-style.md
+  - 原话:「拿这个文章作为公众号文章的输出风格」
+  - 现象:2026-07-26 抓取其 20 篇长文(191 条自有推文中 35 条达长文级)入 references/style-corpus-ak.md;拆解为 5 条可抄语言纪律 + 3 条不抄(引流CTA/无出处断言/模板复用),落 taste-rules.json#outputStyle
+- `output-chinese-only-no-translationese` **产出一律中文公众号正文;英文参考号只学节奏不学句法** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: adopted,落于 taste-rules.json#outputStyle.languageHardRule + references/output-style.md#中文转写规则
+  - 原话:「我要的是中文输出公众号 切记」
+  - 现象:2026-07-26 强调。风险点:参考号 @AnatoliKopadze 是英文号,照搬英文句法写中文=翻译腔(本 skill 头号病)。已落硬规则:名词化主语拆主谓、被动改主动、从句拆句、书面连接词改短转折、术语除专有名词外全译中文,附收尾三句自查
+- `accepts-pipeline-governance-topic` **认可自动化管线治理题材** — 出现 2 次,首见 2026-07-26,最近 2026-07-26,status: adopted,落于 config/taste-rules.json#preferredTopics
+  - 原话:「卡 6 和卡 8 都 ok」
+  - 现象:用户正式选中卡 6「自动化越来越多，谁来管管线」；进入成文前的选题交接。
+- `accepts-workflow-model-selection-topic` **认可工作流内验证模型选型题材** — 出现 2 次,首见 2026-07-26,最近 2026-09-04,status: open
+  - 原话:「卡 6 和卡 8 都 ok」
+  - 现象:用户在 2026-W36 选中卡 5「模型不是按名气分工，是按责任分工」；正样本从“在工作里看模型”延伸到“先按写、审、测的责任分工，再选模型”。
+- `image-style-minimal-single-object-default` **配图默认改 S-B 极简单物件:单色满底+唯一白物件+粗黑手绘线+留白≥50%** — 出现 3 次,首见 2026-07-27,最近 2026-07-29,status: adopted,落于 automation/image-style.md(S-B 构图/prompt/三问) + taste-rules.json#imageStyle.default+variants+conceptToObject
+  - 原话:「你觉得这样简洁且优雅的图片提示词应该怎么写? 优化到 skill 里去」
+  - 现象:2026-07-27 二次修正:用户要求「先提炼设计原则再推导提示词」。首版跳步直接给 prompt,且把主体误判为「只有一个」;复核 5 张样例后提炼出六条设计原则并扩展到九条(见 designPrinciples)。2026-07-29 正样本:卡7 封面出 3 张同规范候选(①陶土橙+手接接力棒 ②鼠尾草绿+手托水平尺 ③陶土橙+手持音叉),用户选①。判据积累=概念落物优先选「有动作发生」的物件(接力棒被接住=交付在传递),纯度量器具(水平尺/音叉)虽然语义准确但画面静止
+- `image-fill-vs-line-must-mix` **实心与线条必须混搭;黑线是造型语言不是描边工具** — 出现 1 次,首见 2026-07-27,最近 2026-07-27,status: adopted,落于 automation/image-style.md#原则6-7+prompt+八问 / taste-rules.json#imageStyle.designPrinciples
+  - 原话:「不会对所有图形描完整黑线,黑线用于轮廓\负形\剪影等,交代图形之间的关系来用;而不是单纯勾个边;描边与实心图形搭配着来,绝不会全是实心图形或者纯描边」
+  - 现象:2026-07-27 用户拆开我原则五六里混成一句的「奶油白填充+粗黑手绘线」——正是这句导致出图变成给每个东西勾边。样例复核证实:图3 苹果纯实心无描边+书纯线条;图1 节点球实心+连线线条;图4 纸实心+放大镜与手线条,5/5 两种手法各承担一部分。已拆成两条独立原则(6 混搭绝不统一 / 7 黑线是造型语言),prompt 加 MIXED rendering 段与四条 negative,闸门从六问扩到八问(新增「实心块有没有被套边」「是否全实心或全线稿」)
+- `image-solid-must-be-handcut-silhouette` **实心块必须是手绘剪影(带物件特征、手剪边缘、当主角),禁几何图元占位** — 出现 1 次,首见 2026-07-27,最近 2026-07-27,status: adopted,落于 automation/image-style.md#原则8+prompt+概念表+十一问 / taste-rules.json#imageStyle
+  - 原话:「新出了一批,实心图形毫无美感」
+  - 现象:2026-07-27 实测翻车:书用线条画好后压一个标准白色圆角矩形当纸;绿底门旁贴一个等边白三角;实心块小、孤立、像补丁。根因=我上一版只写了「主体用实心白」,没规定实心形状本身必须是有造型的剪影,模型于是拿几何图元填位。对照样例:苹果实心白但轮廓有顶部凹陷+叶子缺口,纸有卷角与透视变形——形状自己就说清是什么。已立原则八(四条硬要求+唯一例外)、prompt 加 HAND-CUT SHAPE 段与两条 negative、概念拆解表新增「剪影特征(必填)」栏、闸门从八问扩到十一问
+- `prefers-how-over-what` **选题正文要方法论不要成就叙事:说清具体怎么做,不说做了什么** — 出现 2 次,首见 2026-07-28,最近 2026-07-29,status: open
+  - 原话:「不要说我做了什么,要说我具体怎么做的,登录态 3000 多个如何在 1 周的时间设计+开发验收」
+  - 现象:2026-07-28 卡7 方向修正。WHAT=成就叙事读者拿不走;HOW(穷举状态→机器读稿→双端同跑→按格验收)=方法读者能照做。同场要求:轴=交付节奏/交付物的时代差异,收口=对设计师未来的启示。2026-07-29 正样本:终稿被用户认可(「整体写得不错」)并推草稿箱,其 HOW 的落地形态是「先定状态与不可违背的规则→双端边实现→页面出来就测→差异回判是实现偏了还是设计没说清」,即把 HOW 写成推进方式而非步骤清单——这是本条的参考实现
+- `scene-then-lift-one-layer` **正文必须先给真实工作现场,再上提一层锋利判断(两端都不许偏)** — 出现 2 次,首见 2026-07-29,最近 2026-07-29,status: adopted,落于 taste-rules.json#outputStyle.sceneThenLift
+  - 原话:「这一段写的很容易懂 新的就看不懂了」
+  - 现象:2026-07-28/29 卡7 成文实测,用户两次反向纠正同一条:①概括成自造术语(交接缝/通过线/体验判断生产负责人/生产链/同跑/工程感)后「新的就看不懂了」;②改回具体细节后「这里举例也很啰嗦 显得无聊 且视角狭隘」,并要求「把具体事件往上提炼一层核心观点和概念」。结论=既不能只堆细节(沦为项目复盘),也不能只讲概念(失去理解抓手)。终稿的合格解法:旧流程/新流程各给一段真实现场,再上提为一句判断「过去靠串行交付,现在靠并行校准」
+  - 备注:2026-07-29 落地为本轮唯一口味升级(occurrences 达 2)。同轮附带 exampleDiscipline 作为写作纪律记录,但 example-exits-after-proving 仍为 open,未升级为闸门规则
+- `example-exits-after-proving` **一个例子只证一个观点,证完立即离场;禁同一例子在新旧对照里反复讲** — 出现 1 次,首见 2026-07-29,最近 2026-07-29,status: open
+  - 原话:「这里举例也很啰嗦 显得无聊 且视角狭隘」
+  - 现象:2026-07-29 卡7 实测:键盘错误提示、点击区两个 UI 例子各自展开过长,且同一例子在旧流程段和新流程段各讲一遍,稀释了主判断。根因=用局部 UI 缺陷承担整个生产方式变化的举证。修法:例子只负责证一个观点,证完不再回收利用;跨角色结构对照优于单点 UI 细节
+- `dont-explain-users-sharp-line` **用户已写出的锋利短句不得替其补解释,短句自身成立就收住** — 出现 1 次,首见 2026-07-29,最近 2026-07-29,status: open
+  - 原话:「不用 我改回来了」
+  - 现象:2026-07-29 实测:用户在终稿手写「代码即是最终文档。」一句独立成段;我判断它孤立,补了一句「设计规则是否成立,最终不看它写在稿子里,而看它是否真正进入代码、跨端保持一致,并通过测试」当承上启下。用户直接 revert 只留原句。AI 天性想解释,这条会反复咬人:用户手写的判断句默认已完成,想补充先问
+- `prefer-testing-over-acceptance-wording` **成文用「测试」不用「验收」(用户全局命令)** — 出现 1 次,首见 2026-07-29,最近 2026-07-29,status: adopted,落于 taste-rules.json#preferredTerms
+  - 原话:「所有验收改为测试」
+  - 现象:2026-07-29 用户对卡7 终稿下的全局指令,连「验收标准」也改成「测试标准」,标题同步从「当设计、开发、验收同时开始」改为「当设计、开发、测试同时开始,设计师在做什么?」。原因推断:验收是内部流程黑话且暗含末尾环节,与本文「三条线同时开始」的判断自相矛盾;测试是读者通用词。属用户直接指令而非我的推断,不受每轮≤1项防抖约束
+- `viewpoint-lands-on-mechanism` **核心观点要落到具体机制+给解法,不要停在抽象断言** — 出现 3 次,首见 2026-08-19,最近 2026-08-19,status: open
+  - 原话:「你要把 handoff 太薄作为这篇文章的核心观点,然后具体薄在哪?如何解决问题 写进去」
+  - 现象:第3次同向印证:薄在机制不够,正文还要落到看得见的形状——四键长什么样、bug 在哪个参数、测试断言什么;概念化复述机制=没说
+- `depth-what-before-how` **文章要先定义「是什么」,再讲「怎么办」** — 出现 1 次,首见 2026-08-19,最近 2026-08-19,status: open
+  - 原话:「我现在觉得没有深度 一直在讲 how 没有 what」
+  - 现象:交接的定义(转移理解而非传递结论)、为什么总会薄(模仿人类分工但接手的换成空白模型)——只有 how 的文章没深度
+
+## 机制缺口(确定性问题;可当轮落地,改脚本须过 node --check)
+
+- `context-overload-scheduled-run` **14 天窗口+27KB runbook 把 lead 上下文推到 35.9 万 token,输出崩塌** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: landed,落于 pipeline.json#windowDays + contextBudget
+  - 现象:2026-07-26 三次运行 $164.63,末次 55min 空转超时;根因=素材全量进上下文。修复:窗口回 7 天、卡数降 ≥6、阶段产物落文件 lead 只读摘要
+- `worker-callback-unreliable` **worker 回传通道不稳(丢失/重复/乱序),产出不能绑在回传消息上** — 出现 2 次,首见 2026-07-26,最近 2026-07-26,status: landed,落于 pipeline.json#workerDiscipline
+  - 现象:qwen/opus 回传实测不稳,kimi-k3 3/3 正常;修复:产出必须先落文件,回传只当完成信号
+- `style-source-must-be-x-article` **风格语料抓取口径:必须是 X Article 全文,不是引流长推文** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: landed,落于 references/style-corpus/(8篇) + output-style.md + taste-rules.json#outputStyle
+  - 原话:「你确认你抓的都是这种长文章 而不是闲聊和短推?」
+  - 现象:2026-07-26 用户纠错。首次抓取把长推文(600-2400字,结尾均为 full guide in the article below)当成文章。真 Article 不出现在 user-posts 时间线,须靠推文自引用反查 id 再 twitter article <id> -m。已抓 8 篇真长文(8-16KB)替换语料;20 篇缺口原因与补齐路径已记入 output-style.md 末节
+- `ledger-metabolism-rules` **台账新陈代谢:open≤10/跨指纹≥3上移/45天未触发归档不删/一次性事实不入账** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: landed,落于 SKILL.md#台账新陈代谢 + scripts/evo-note.mjs(archived 状态)
+  - 现象:2026-07-27 参照 example-org/dash blog skill 实验台消化规则移植,三处按周更节奏改装:30天→45天(周更6期);删除→归档(review-pr 留档传统);上限只算 open。冲突裁决同轮写入:数据文件赢散文
+- `gate-claimed-but-output-not-rechecked` **闸门只在 6b 阶段跑过,落盘终稿未复检:W31 实测命中 5 处(1 硬违规 + 4 抽象对抽象)** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: landed
+  - 现象:2026-07-27 首跑实测。skill 汇报「人话闸门均已通过」,但对 selections/2026-W31-选题.md 复跑 check-gates 命中 6 处:中心思想 26 字>25(机械硬违规,漏判)、「从直觉变成方法」「从个人习惯变成可命名的系统方法」「从参考变成指令」「从工具使用者变成…」四处抽象对抽象(「从工程师变成 AI」两端具体,合规)。根因:闸门跑在 6b 中间产物上,落盘时又经过一次改写,终稿没有再跑。修法:Step 7 的机械校验对象改为「落盘后的最终文件」,并把 gate 报告落 runs/<d>/gate-report.json 作为证据
+  - 提案:SKILL.md Step 6/7 调整:落盘后必须对 selections 终稿再跑一次 check-gates,报告落文件;命中未清零不得声称通过
+  - 备注:2026-07-28 W32 落地:Step 6/7 对落盘终稿再跑 check-gates+blacklist,报告落 runs/<d>/gate-report.json;首轮即立功——blacklist 在 6b 阶段被 && 链短路从未真跑,终稿复检抓出 11 处「第一*」并清零
+- `image-style-unenforced-placeholder` **配图风格从占位改为实测定稿并加三道校验(原占位 prompt 导致出图完全跑偏)** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: landed,落于 automation/image-style.md(重写) + taste-rules.json#imageStyle + wewrite/references/weekly-topics.md#配图
+  - 原话:「出的图什么玩意? 是我指定的风格吗? / 图片没有指定风格 也没有指定尺寸比例,你去看下过去文章的配图风格和尺寸,明确强制这一点」
+  - 现象:2026-07-27。image-style.md 自 07-25 建立起头部就标着「待从 @claudeai 提取定稿」,四个子风格 prompt 全是占位,从未校准;且出图环节未强制读它。结果出图为深蓝灰底+机械臂+STOP+中文标签,违反暖色/无文字/禁深色三条已有规则。修法:从 output/Attachments/ 已发布文章配图实测反推——采样得四色板(#CA6743/#ADBCA5/#FAF6EA/墨黑线)、构图公式(左右分色块叙事+抽象几何+半调网点,3/3 同构)、尺寸表(封面16:9、正文主力 2.36:1=1584x672)、可直接用的 prompt 模板;加三道机械校验(比例/零文字/色板)并接进 wewrite 配图环节
+- `wewrite-preview-renders-frontmatter` **WeWrite preview/publish 把 YAML frontmatter 当正文渲染,元数据会进 HTML 与草稿箱** — 出现 1 次,首见 2026-07-29,最近 2026-07-29,status: open
+  - 现象:2026-07-29 卡7 排版实测:对 output 正文直接跑 cli.py preview,生成的 HTML 第 207-208 行出现「published_url: null」「cover_image: output/assets/...」,digest 也被截成 frontmatter 前段。根因=toolkit/converter.py 无 frontmatter 剥离,整份 md 交给 markdown 渲染。本轮绕过方式=先把正文剥离到 _tmp/debug/*-body.md 再渲染与推送(推草稿箱用的是剥离后的文件)。绕过不是修复:下次谁忘了剥离,status/topic_id/封面路径就跟着文章进草稿箱
+  - 提案:wewrite/toolkit/converter.py 的 convert_file 增加 frontmatter 剥离(--- 起首块),同时把 title/digest 优先取 frontmatter 字段;修完对本篇复跑 preview 断言 HTML 不含 published_url/topic_id
+- `wechat-secret-in-keychain-not-config` **推送前未查 keychain 就判降级:上一篇被误标 secret_missing 要求手动上传,实际 secret 一直在** — 出现 1 次,首见 2026-07-29,最近 2026-07-29,status: open
+  - 现象:2026-07-29 卡7 推送实测:config.yaml 里 wechat 段确实只有 appid+author 无 secret,但注释已写明「AppSecret 存在 macOS Keychain(service: wewrite-wechat-secret)」;security find-generic-password -w 直接取到,推送一次成功(草稿 media_id + 封面 media_id 均返回)。反查 history.yaml:2026-07-27 那篇 publish_status=local_only_wechat_secret_missing、notes 写「config.yaml 缺 wechat.secret,本地成品待手动上传」——那是误降级,让用户白手动传了一篇
+  - 提案:wewrite Step 1 环境检查的 wechat.secret 判定改为「config.yaml → keychain(service wewrite-wechat-secret)」两级查找,两级都空才 skip_publish;并回填 2026-07-27 记录的真实原因
+- `cross-family-polish-unavailable-in-agent` **<agent> 会话内开不出 Orca team,跨家族去 AI 味环节结构性缺失** — 出现 1 次,首见 2026-07-29,最近 2026-07-29,status: open
+  - 现象:2026-07-29 实测:start_team 返回 INTERNAL / PRECONDITION_FAILED「collaboration requires an enabled local project session」,get_workspace_info 显示 workflow=null worker_count=0。weekly-topics §3 规定的 deepseek-v4-pro 跨家族润色因此无法执行,本轮如实跳过、未用同家族自润充数(符合既有降级纪律)。但这不是偶发:只要成文发生在 <agent> 对话工作目录里,这一步就永远拿不到 worker,等于周更文章长期少一道去 AI 味
+  - 提案:二选一:①成文环节改在本地项目会话跑(可开 team);②给 §3 加非 worker 的跨家族通道(如直接调不同家族模型 API 做单文件润色),否则应在 history.yaml 固定标注「未去 AI 味」而不是每次临时说明
+- `image-gen-cannot-hit-absolute-size` **配图尺寸表写绝对像素但 image-gen 只接 ratio,实测 16:9 出 1376x768 而非 1920x1080** — 出现 1 次,首见 2026-07-29,最近 2026-07-29,status: open
+  - 现象:2026-07-29 封面实测:submit_gen_image 只有 ratio 参数,传 16:9 返回 1376x768(比值 1.792,与 16:9=1.778 差 0.014,在闸门 ±0.02 内)。但 image-style.md 尺寸表把封面写成「1920x1080」、正文写成「1584x672」,字面读会把这张合格图判废。风险是双向的:要么误废合格图,要么下次为凑绝对值放弃闸门
+  - 提案:image-style.md 第三节尺寸表拆成两栏:「比例=硬约束(闸门校这个)」与「绝对像素=期望值(image-gen 达不到不算失败)」;确需 1920 宽时出图后补一次 upscale 并重跑比例校验
+- `source-judgments-must-survive-digest` **源判断原句必须活过消化,不能只剩机制口号** — 出现 1 次,首见 2026-08-19,最近 2026-08-19,status: landed,落于 SKILL.md#Step3+外部长论证入口 / taste-rules.json#sourceJudgments+requiredFields / wewrite weekly-topics.md#0+1+2
+  - 原话:「视频字幕原文——这是这版有 what 层的真正原因：字幕里「计划承载不了理解」「薄交接靠接手的人兜底」这些判断，在消化成提纲时被丢了  这个如何优化进 skill」
+  - 现象:2026-08-19:字幕 what 层在 Step 3 被改写成「交的是清单不是现场」后,wewrite 证据包只剩提纲+数字,成文只能写 how。修法=卡上新增源判断原句栏(2-4句照录)+点名单卡走外部长论证入口+wewrite 证据包强制带原句、what 先于 how。不扩 context、不成文回读全文。
+  - 备注:2026-08-19 当轮落地:选题卡新增源判断原句栏;点名单卡+视频走外部长论证入口;wewrite 证据包强制带原句且 what 先于 how
+- `wewrite-publish-frontmatter-strip` **wewrite 发布前必须剥离 frontmatter,否则正文被污染** — 出现 1 次,首见 2026-08-19,最近 2026-08-19,status: open
+  - 原话:「Digest 显示 frontmatter 文本,正文含 title:/date:」
+  - 现象:2026-08-19 复发:converter 不剥 frontmatter,digest 与正文都被污染。已按 -publish.md 惯例创建剥离副本重推,并用 draft/delete 清理污染草稿。与 ledger wewrite-preview-renders-frontmatter 同根:发布前必须剥 frontmatter。
+- `orca-worker-queue-wakeup-stall` **Orca worker 队列消息偶发不被唤醒消费,超时约 10 分钟由 lead 代修** — 出现 1 次,首见 2026-09-04,最近 2026-09-04,status: open
+  - 原话:「worker 显示 is_working/active 但 idle 13 分钟,queued 消息 consuming:false 不被消费,6c 修订只能由 lead 词级代修」
+  - 现象:2026-09-04 W36 v2 实测:send_to_worker wake_kind=already-active 时消息入队但 worker 不唤醒。应对:send 后若文件时间戳未变,先查 get_worker_queue_status 的 idle_ms 与 consuming,idle 超过约 10 分钟即判唤醒失效,lead 直接代修并记录,不再干等
+
+## 待拍板(判断类,永不自动落地)
+
+- `model-routing-kimi-k3` **人话改写/总纲提炼/主笔 = moonshot/kimi-k3(用户点名)** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: adopted,落于 pipeline.json#models
+  - 原话:「换成moonshot/kimi-k3」
+  - 现象:背景:四模型盲测 qwen 轴最好但回传不稳;kimi-k3 EQ-Bench 创写居首+回传 3/3;Claude 系中文有翻译腔,退居结构/审校
+- `rule-saturation-risk` **规则饱和风险:一夜八轮修订后,下一个失败模式是「字段全绿,灵魂缺席」** — 出现 1 次,首见 2026-07-26,最近 2026-07-26,status: open
+  - 现象:fable 判定:规则冻结,跑真实周期后按「哪条真咬过人」删减,不再加;每轮自进化最多落地 1 项(防抖)

@@ -37,7 +37,30 @@ class XApiError(RuntimeError):
         super().__init__(f"X API error {status}: {body[:400]}")
 
 
+def _file_store() -> "str | None":
+    """Linux / no-Keychain fallback: one 600-mode file per item in $X_SECRETS_DIR
+    (default $SECRETS_DIR/x or ~/.secrets/x). Used when `security` is unavailable
+    or WEWRITE_SECRET_BACKEND=file."""
+    import os
+    import shutil
+    if os.environ.get("WEWRITE_SECRET_BACKEND") == "file" or not shutil.which("security"):
+        base = os.environ.get("X_SECRETS_DIR") or os.path.join(
+            os.environ.get("SECRETS_DIR", os.path.expanduser("~/.secrets")), "x")
+        return base
+    return None
+
+
 def _keychain_get(service: str) -> str:
+    import os
+    base = _file_store()
+    if base:
+        p = os.path.join(base, service)
+        if not os.path.exists(p):
+            raise XAuthError(f"{p} 不存在。先配 OAuth（x_oauth_setup.py）。")
+        value = open(p, encoding="utf-8").read().strip()
+        if not value:
+            raise XAuthError(f"{p} 是空的")
+        return value
     r = subprocess.run(
         ["security", "find-generic-password", "-a", _user(), "-s", service, "-w"],
         capture_output=True,
@@ -52,6 +75,15 @@ def _keychain_get(service: str) -> str:
 
 
 def _keychain_set(service: str, value: str) -> None:
+    import os
+    base = _file_store()
+    if base:
+        os.makedirs(base, mode=0o700, exist_ok=True)
+        p = os.path.join(base, service)
+        fd = os.open(p, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            f.write(value)
+        return
     r = subprocess.run(
         [
             "security",

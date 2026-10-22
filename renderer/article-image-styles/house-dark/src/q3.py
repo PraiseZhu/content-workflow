@@ -3,7 +3,7 @@ from lib2 import *
 W, H = 1080, 2160
 c = Canvas(W, H)
 c.background(hlines=(530, 2020), vlines=(44, 1036), crosses=((44, 530, 15), (1036, 530, 15), (44, 2020, 15), (1036, 2020, 15)), sphere=(880, 300, 205))
-title_block(c, 70, 96, 'GROK BOT', '自动化 QA', 100, '实践经验和复盘', 38, '3 个 GROK BOT · 完整复盘', 22, gap_sub=30)
+title_block(c, 70, 96, 'HOUSE BOT', '自动化 QA', 100, '实践经验和复盘', 38, '3 个 HOUSE BOT · 完整复盘', 22, gap_sub=30)
 cx, cy = 540, 860
 rc = 70; R = rc*1.45
 row_y = 1230
@@ -28,7 +28,7 @@ c.dot(x + w, cy, 4)
 c.chip(0, cy, ['私有仓工单', 'P0/P1 + 失败测试'], fs=21, pad=13, x0=760)
 c.edge([(cx + R, cy), (752, cy)])
 # group caption + outputs
-c.front.append(c.text(cx, by + 44, '一个群 · 三个 GROK BOT 对口径', 19, '#9b9b9f', 'middle', 500, ls=.06))
+c.front.append(c.text(cx, by + 44, '一个群 · 三个 HOUSE BOT 对口径', 19, '#9b9b9f', 'middle', 500, ls=.06))
 oy = by + 130
 c.edge([(220, by), (220, oy + 50)])
 c.dot(220, oy, 4)
@@ -38,6 +38,6 @@ c.chip(560, oy + 100, ['私信 PR 作者', 'P0 / P1'], fs=22, pad=14)
 # human
 hy = oy + 300
 c.chip(540, hy, ['人负责的三件事', '定什么算数 · 定谁说了算 · 按合并键'], fs=26, pad=24, first_color=TEAL_T)
-c.front.append(c.text(70, 2080, 'GROK BOT · QA PIPELINE', 16, '#6f6f74', 'start', 500, ls=.14))
+c.front.append(c.text(70, 2080, 'HOUSE BOT · QA PIPELINE', 16, '#6f6f74', 'start', 500, ls=.14))
 c.render('qa-architecture-styled.png', 'q3')
 print(by, oy, hy)

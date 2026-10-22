@@ -1,0 +1,17 @@
+# 待 Praise 删改 — 2026-10-18 由 bot 从 writing-qa/ 与 articles/ 现有稿子、frontmatter 和 tags 初拟
+# 一行一个词；# 开头是注释（脚本忽略）。英文不区分大小写。
+Grok Bot
+GrokBot
+Mivo
+MivoCanvas
+mivo-canvas-plugin
+xindong
+心动
+panoptes
+Argus
+Cindy
+Jev
+知识沉淀
+Writing Bot
+审查机运维
+PraiseZhu

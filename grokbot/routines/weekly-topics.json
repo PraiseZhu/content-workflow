@@ -1,0 +1,5 @@
+{
+  "name": "每周10个选题",
+  "schedule": {"cron": "4 8 * * 5", "timezone": "Asia/Shanghai", "human": "每周五 08:04"},
+  "prompt_file": "grokbot/routines/weekly-topics.prompt.txt"
+}

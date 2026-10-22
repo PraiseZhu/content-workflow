@@ -1,0 +1,16 @@
+# article.yaml — per-article data (contract: renderer/article-image-template/TEMPLATE.md)
+slug: sample-article
+title_zh: "让 AI 审查 AI，最怕它们互相点头"
+title_en: "When AI Reviews AI, Beware the Nod"
+status: images-final
+platforms: [wechat, x]
+langs: [zh, en]
+style: dark-grid-photo
+template_version: 2026-10-18
+sizes_version: 2026-10-18
+photos: photos
+out:
+  zh: images/zh
+  en: images/en
+locked:
+  - "让 AI 审查 AI，最怕它们互相点头"

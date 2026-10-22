@@ -5,7 +5,7 @@ c = Canvas(W, H)
 c.background(hlines=(70, 830), vlines=(60, 840), crosses=((60,70,16),(840,70,16),(60,830,16)), sphere=(870, 875, 250))
 c.html.append('<div class="t" style="left:80px;top:118px;font-size:118px;color:#fff">自动化 QA</div>')
 c.html.append('<div class="t" style="left:80px;top:248px;font-size:118px;color:#2EC4B6">只留三件事</div>')
-c.html.append('<div class="m" style="left:84px;top:402px;font-size:30px;letter-spacing:.03em">3 个 GROK BOT · 18 小时</div>')
+c.html.append('<div class="m" style="left:84px;top:402px;font-size:30px;letter-spacing:.03em">3 个 HOUSE BOT · 18 小时</div>')
 c.html.append('<div class="tag" style="left:84px;top:458px;font-size:23px;padding:9px 16px;letter-spacing:.03em">什么算数 · 谁说了算 · 合并键</div>')
 # main bot
 x, y, r = 320, 680, 100

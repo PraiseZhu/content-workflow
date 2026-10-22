@@ -4,6 +4,8 @@
 
 > 这里的一切都是**方法 + 工具 + 规则数据**。所有密钥、账号、公司/项目名、个人路径都已脱敏为占位符（见下方「脱敏说明」）。
 
+> **新 Grok Bot 接手**：读 [BOOTSTRAP.md](BOOTSTRAP.md)。作者迁移步骤：[grokbot/MIGRATION.md](grokbot/MIGRATION.md)。`handoff/` 是**私有未脱敏**交接资料，公开前必须删除。
+
 ## 快速开始
 1. 读 [docs/01-overview.md](docs/01-overview.md) 了解全流程；
 2. 按 [docs/12-install.md](docs/12-install.md) 安装（venv、依赖、路径变量、微信 AppID/Secret、X OAuth、字体、headless Chrome）；
@@ -38,6 +40,12 @@ examples/             article-build（一篇文章的 slots/manifest/build 脚�
 style-library/        风格库 index 模板 + style.md 示例
 routines/             两个定时任务的完整 prompt
 knowledge/            每日工作标准（完成标准、异常处理、需作者决定的事）
+content/              内容根种子：playbook.md、automation/（image-style、style-notes、设计文档、baseline、trajectory）、selections/pool.md、_dryrun/
+skills/idea-outline/  选题→提纲 skill（含 X 长文骨架 output-style.md）
+tools/                convert_for_wewrite.py（Obsidian → wewrite 转换）
+grokbot/              新 Grok Bot 迁移包：profile、memory-seed、routines、skills、setup.sh、MIGRATION.md
+handoff/              ⚠️ 私有：真实路径/账号/草稿状态/私名清单/第三方范文（公开前删除）
+BOOTSTRAP.md AGENTS.md 写给接手 bot 的入口
 ```
 
 ## 核心铁律

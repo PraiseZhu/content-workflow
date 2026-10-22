@@ -7,7 +7,7 @@ c.background(hlines=(140, 880), vlines=(96, 1300), crosses=((96,140,22),(1300,14
 # title block
 c.html.append('<div class="t" style="left:150px;top:205px;font-size:150px;color:#fff">自动化 QA</div>')
 c.html.append('<div class="t" style="left:150px;top:370px;font-size:150px;color:#2EC4B6">只留三件事给人</div>')
-c.html.append('<div class="m" style="left:156px;top:585px;font-size:44px;letter-spacing:.04em">3 个 GROK BOT · 18 小时搭完</div>')
+c.html.append('<div class="m" style="left:156px;top:585px;font-size:44px;letter-spacing:.04em">3 个 HOUSE BOT · 18 小时搭完</div>')
 c.html.append('<div class="tag" style="left:156px;top:676px;font-size:32px;padding:14px 24px;letter-spacing:.04em">55 分钟跑通 · 合并后 12 秒开测</div>')
 # flow
 y1, y2 = 330, 710

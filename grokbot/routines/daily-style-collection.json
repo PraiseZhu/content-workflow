@@ -1,0 +1,5 @@
+{
+  "name": "X热门长文配图风格收集",
+  "schedule": {"cron": "4 10 * * 1-5", "timezone": "Asia/Shanghai", "human": "周一至周五 10:04"},
+  "prompt_file": "grokbot/routines/daily-style-collection.prompt.txt"
+}

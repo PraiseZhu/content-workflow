@@ -12,6 +12,8 @@ config.yaml
 .secrets/
 config/private-names.txt
 history.yaml
+!handoff/history.yaml
+!examples/history.example.yaml
 # python / node
 .venv/
 venv/
@@ -30,3 +32,11 @@ render/html/
 *.jpeg
 *.pdf
 .DS_Store
+examples/sample-article/render/html/
+examples/sample-article/render/manifest.*.json
+.pytest_cache/
+skill/wewrite/lessons
+skill/wewrite/corpus
+skill/wewrite/output
+skill/wewrite/playbook.md
+skill/wewrite/references/exemplars
