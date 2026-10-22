@@ -1,0 +1,9 @@
+{
+ "rule": "en.signpost",
+ "hit": [
+  "In this article, we look at reviews."
+ ],
+ "miss": [
+  "Reviews take two days."
+ ]
+}

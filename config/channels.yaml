@@ -1,0 +1,23 @@
+# channels.yaml — publishing channels. NO SECRETS IN THIS FILE (it is backed up).
+version: 2026-10-18
+wechat:
+  account: "公众号（账号名待作者填写）"
+  lang: zh
+  image_slots: [wechat.cover, wechat.square, wechat.body]
+  formatter: ${WEWRITE_DIR}/../wewrite
+  obsidian_converter: ${WEWRITE_DIR}/../bin/convert_for_wewrite.py
+  secrets_file: ${SECRETS_DIR}/wewrite/config.yaml
+  draft_rules: "push to draft box only; never overwrite an existing draft (new draft each time); only push when both covers exist; check both cover crops in the backend after pushing"
+x:
+  account: "X 账号（待作者填写）"
+  lang: en
+  image_slots: [x.article_header, x.body]
+  format: "X Article; no raw markdown"
+  secrets_file: ${SECRETS_DIR}/x/config.yaml
+  draft_rules: "never post automatically; prepare the article + images for the author"
+secrets_policy: >
+  Secrets live only under ${SECRETS_DIR}/ (mode 700 dir, 600 files). That directory is outside every path
+  ${BACKUP_REPO}/sync.sh copies, and its name also matches sync.sh's '*secret*' exclude, so it is never
+  committed to the backup repo. Never write a secret into ${WORKSPACE}, article dirs, wewrite-src, or this file.
+  wewrite expects <skill_dir>/config.yaml: link it (ln -s ${SECRETS_DIR}/wewrite/config.yaml <skill_dir>/config.yaml);
+  sync.sh's rsync -a copies the symlink, not the content. Run bin/publish-preflight.py before any push.

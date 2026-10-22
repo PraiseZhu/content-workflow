@@ -1,0 +1,11 @@
+# 风格基线：用 作者 自己写的旧文算分布，新稿和它比（humanness_score.py 自动读取）。
+# 结果在 JSON 的 style_baseline 字段里，只报告不计分。
+# 某个指标的 |z| 超过 z_threshold，就列进 off_baseline，提示"这一项不像你平时写的"。
+#
+# TODO(author)：挑 3–5 篇你亲手写、最满意的原始 Markdown（不要用 AI 稿或摘要），
+#   把路径填进 samples。路径可以是绝对路径，也可以是相对本文件的路径，支持 ~。
+#   中文文章和英文文章建议分两份配置（英文另建 style-baseline-en.yaml，用 --baseline 指定）。
+# 比较的指标：平均句长、句长标准差、段长变异系数、冒号/破折号/粗体密度、列表行占比、正式连词密度。
+samples: []
+#  - "${CONTENT_ROOT}/output/xxxx.md"
+z_threshold: 1.5

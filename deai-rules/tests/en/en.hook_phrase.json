@@ -1,0 +1,9 @@
+{
+ "rule": "en.hook_phrase",
+ "hit": [
+  "Here's the thing: reviews lag."
+ ],
+ "miss": [
+  "Reviews lag by two days."
+ ]
+}

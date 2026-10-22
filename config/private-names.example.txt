@@ -1,0 +1,4 @@
+# 私名清单（每行一个）：公司/产品/项目/同事名等，deai_lint 的 p.leak.names 会在正文里禁止出现
+# Private names, one per line. Never commit your real list.
+AcmeCorp
+ProjectX

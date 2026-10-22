@@ -1,0 +1,9 @@
+{
+ "rule": "en.generic_close",
+ "hit": [
+  "Only time will tell."
+ ],
+ "miss": [
+  "Next week we roll it to team two."
+ ]
+}

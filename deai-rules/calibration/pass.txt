@@ -1,0 +1,6 @@
+# 校准 pass 集：作者确认过的人写/满意文章（每行一个绝对路径，只放路径，不复制原文）
+# 状态 2026-10-18：空。作者说还没有完全满意的终稿；box 上也没找到他早期自写的文章（见 ../CHANGELOG.md）。
+# 加入方式：python3 deai-lint/deai_lint.py calibrate --add-pass /abs/path/article.md
+${ARTICLES_DIR}/early-human/brand-1.md
+${ARTICLES_DIR}/early-human/brand-2.md
+${ARTICLES_DIR}/early-human/visual-competitive-analysis.md

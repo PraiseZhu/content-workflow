@@ -1,0 +1,9 @@
+{
+ "rule": "zh.heading_numbering",
+ "hit": [
+  "## 一、背景\n\n内容。"
+ ],
+ "miss": [
+  "## 背景\n\n内容。"
+ ]
+}

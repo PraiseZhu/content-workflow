@@ -1,0 +1,10 @@
+{
+ "rule": "p.leak.names",
+ "names": "deai-rules/tests/personal/names.fixture.txt",
+ "hit": [
+  "我们在AcmeBot上跑测试。"
+ ],
+ "miss": [
+  "我们在一套测试系统上跑测试。"
+ ]
+}

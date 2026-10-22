@@ -1,0 +1,10 @@
+{
+ "rule": "en.negative_parallel",
+ "hit": [
+  "It's not a tooling problem, it's a review problem.",
+  "This is not just a test but a contract."
+ ],
+ "miss": [
+  "The test did not run on Friday."
+ ]
+}

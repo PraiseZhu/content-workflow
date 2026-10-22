@@ -1,0 +1,9 @@
+{
+ "rule": "en.em_dash",
+ "hit": [
+  "A — b — c — d."
+ ],
+ "miss": [
+  "A — b."
+ ]
+}

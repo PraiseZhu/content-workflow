@@ -1,0 +1,816 @@
+{
+ "template": "article-image-template",
+ "template_version": "2026-10-18",
+ "lang": "en",
+ "nav": [
+  "REVIEW",
+  "GATES",
+  "ISOLATION",
+  "APPEAL",
+  "RELEASE"
+ ],
+ "tele": [
+  "SRC REVIEW-PIPE · MODE VERIFY",
+  "ORG 0x7F3C · LAT 212MS"
+ ],
+ "figures": [
+  {
+   "slot": "x.article_header",
+   "layout": "hero",
+   "scale": 0.9,
+   "photo": "campus.jpg",
+   "geom": {
+    "px": -260,
+    "py": -20,
+    "pw": 1100,
+    "cols": [
+     200,
+     560,
+     900,
+     1240,
+     1580,
+     1800
+    ],
+    "rows": [
+     210,
+     485,
+     535
+    ],
+    "orule": 440,
+    "ovl": 520,
+    "navx": [
+     200,
+     560,
+     900,
+     1240,
+     1580
+    ],
+    "navy": 176,
+    "tagx": 200,
+    "tagy": 225,
+    "tgt": [
+     450,
+     500,
+     80,
+     72
+    ],
+    "side": "left",
+    "tx": 570,
+    "ty": 228,
+    "tfs": 84,
+    "dx": 1415,
+    "dy": 238,
+    "colx": [
+     570,
+     910,
+     1250,
+     1590
+    ],
+    "chy": 550,
+    "ly": 598,
+    "gx": 198,
+    "gy": 548,
+    "gfs": 128
+   },
+   "text": {
+    "nav": [
+     "REVIEW",
+     "GATES",
+     "ISOLATION",
+     "APPEAL",
+     "RELEASE"
+    ],
+    "tag": "[ REVIEW-01 ]",
+    "tele": [
+     "CONTACT",
+     "FINDING P1 · SRC MODEL-A  CONF 0.71",
+     "HEAD 7F3C · DIFF 214 LN · RE-CHECK"
+    ],
+    "target_chip": "P1 · VERIFYING",
+    "target_sub": "FINDING / P1",
+    "title_html": "When <span class=\"l\">AI</span> Reviews <span class=\"l\">AI</span><br>Beware the Nod",
+    "deck_mark": "®",
+    "deck_html": "Opinions must<br>become evidence",
+    "deck_sub": "Verify before block.",
+    "columns": [
+     [
+      "GATES",
+      [
+       "DETERMINISTIC GATES",
+       "CI GREEN",
+       "NO CONFLICT",
+       "EVERY 3 MIN"
+      ]
+     ],
+     [
+      "ISOLATION",
+      [
+       "4-STAGE",
+       "CREDENTIAL ISOLATION",
+       "NO-CRED SCAN",
+       "GATEWAY TOKEN ONLY"
+      ]
+     ],
+     [
+      "VERIFY",
+      [
+       "AUTHOR APPEAL",
+       "RE-CHECK ON HEAD",
+       "MAINTAINER RULING",
+       "DEFER TO ISSUE"
+      ]
+     ],
+     [
+      "RELEASE",
+      [
+       "8 REQUIRED CHECKS",
+       "NO P0 / P1",
+       "THREADS RESOLVED",
+       "DESIGNATED MERGE"
+      ]
+     ]
+    ],
+    "giant": "P0/P1"
+   }
+  },
+  {
+   "slot": "x.body",
+   "name": "fig1-consensus-vs-verification",
+   "layout": "frame",
+   "photo": "campus.jpg",
+   "dim": 0.45,
+   "tag": "FIG-01",
+   "head": "Nods don't count. Evidence does.",
+   "elements": [
+    {
+     "c": "raw",
+     "a": [
+      "<div class=\"vl or\" style=\"left:800px;top:240px;bottom:140px;width:2px;background:@accent@\"></div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      60,
+      262,
+      "<div style=\"font:700 30px Inter;letter-spacing:-.02em\">CONSENSUS </div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      840,
+      262,
+      "<div style=\"font:700 30px Inter;letter-spacing:-.02em\">VERIFICATION </div>"
+     ]
+    },
+    {
+     "c": "node",
+     "a": [
+      170,
+      400,
+      "Model A",
+      "MODEL-A · VOTE ✓"
+     ],
+     "k": {
+      "w": 190
+     }
+    },
+    {
+     "c": "ab",
+     "a": [
+      275,
+      388,
+      "<div class=\"mono\" style=\"font-size:16px;color:#fff\">✓</div>"
+     ]
+    },
+    {
+     "c": "line",
+     "a": [
+      300,
+      400,
+      540,
+      520
+     ]
+    },
+    {
+     "c": "node",
+     "a": [
+      170,
+      520,
+      "Model B",
+      "MODEL-B · VOTE ✓"
+     ],
+     "k": {
+      "w": 190
+     }
+    },
+    {
+     "c": "ab",
+     "a": [
+      275,
+      508,
+      "<div class=\"mono\" style=\"font-size:16px;color:#fff\">✓</div>"
+     ]
+    },
+    {
+     "c": "line",
+     "a": [
+      300,
+      520,
+      540,
+      520
+     ]
+    },
+    {
+     "c": "node",
+     "a": [
+      170,
+      640,
+      "Model C",
+      "MODEL-C · VOTE ✓"
+     ],
+     "k": {
+      "w": 190
+     }
+    },
+    {
+     "c": "ab",
+     "a": [
+      275,
+      628,
+      "<div class=\"mono\" style=\"font-size:16px;color:#fff\">✓</div>"
+     ]
+    },
+    {
+     "c": "line",
+     "a": [
+      300,
+      640,
+      540,
+      520
+     ]
+    },
+    {
+     "c": "node",
+     "a": [
+      640,
+      520,
+      "Post opinion",
+      "POST OPINION"
+     ],
+     "k": {
+      "w": 180,
+      "orange": true
+     }
+    },
+    {
+     "c": "ab",
+     "a": [
+      560,
+      600,
+      "<div class=\"mono\" style=\"font-size:11px;color:@accent_soft@;line-height:1.7\">3/3 AGREE<br>EVIDENCE: NONE</div>"
+     ]
+    },
+    {
+     "c": "node",
+     "a": [
+      905,
+      520,
+      "One reviewer",
+      "ONE REVIEWER"
+     ],
+     "k": {
+      "w": 160
+     }
+    },
+    {
+     "c": "node",
+     "a": [
+      1105,
+      520,
+      "Server check",
+      "SERVER CHECK"
+     ],
+     "k": {
+      "w": 170
+     }
+    },
+    {
+     "c": "line",
+     "a": [
+      985,
+      520,
+      1020,
+      520
+     ]
+    },
+    {
+     "c": "line",
+     "a": [
+      1190,
+      520,
+      1225,
+      520
+     ]
+    },
+    {
+     "c": "node",
+     "a": [
+      1305,
+      520,
+      "Re-check",
+      "RE-CHECK @ PR HEAD"
+     ],
+     "k": {
+      "w": 160
+     }
+    },
+    {
+     "c": "line",
+     "a": [
+      1385,
+      500,
+      1420,
+      420
+     ],
+     "k": {
+      "orange": true
+     }
+    },
+    {
+     "c": "line",
+     "a": [
+      1385,
+      540,
+      1420,
+      620
+     ],
+     "k": {
+      "dash": true
+     }
+    },
+    {
+     "c": "node",
+     "a": [
+      1420,
+      400,
+      "Block",
+      "BLOCK"
+     ],
+     "k": {
+      "w": 120,
+      "orange": true,
+      "center": false
+     }
+    },
+    {
+     "c": "node",
+     "a": [
+      1420,
+      640,
+      "Drop",
+      "DROP"
+     ],
+     "k": {
+      "w": 120,
+      "center": false
+     }
+    },
+    {
+     "c": "br",
+     "a": [
+      1105,
+      520,
+      210,
+      120,
+      false
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "x.body",
+   "name": "fig2-gates-to-isolated-stages",
+   "layout": "frame",
+   "photo": "gate.jpg",
+   "dim": 0.9,
+   "tag": "FIG-02",
+   "head": "Gates first, then sealed stages",
+   "elements": [
+    {
+     "c": "raw",
+     "a": [
+      "<div class=\"hl or\" style=\"top:428px;height:2px;background:@accent@\"></div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      60,
+      445,
+      "<div class=\"chip\" style=\"display:inline-block\">PRE-GATE</div><div class=\"zh\" style=\"font-size:24px;margin-top:12px\">Deterministic gates (no model)</div><div class=\"mono\" style=\"font-size:11px;margin-top:6px;opacity:.75;line-height:1.7\">CI GREEN · NO CONFLICT · SIZE OK</div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      60,
+      620,
+      "<div class=\"zh\" style=\"font-size:24px\">Scheduler, every 3 min</div><div class=\"mono\" style=\"font-size:11px;margin-top:6px;opacity:.75\">SCHEDULER · POLL QUEUE / 180S</div>"
+     ]
+    },
+    {
+     "c": "line",
+     "a": [
+      330,
+      650,
+      740,
+      690
+     ],
+     "k": {
+      "dash": true
+     }
+    },
+    {
+     "c": "ab",
+     "a": [
+      330,
+      285,
+      "<div class=\"zh\" style=\"font-size:24px;text-align:right\">Server re-check</div><div class=\"mono\" style=\"font-size:11px;margin-top:6px;opacity:.75;text-align:right\">SERVER RE-CHECK</div>"
+     ]
+    },
+    {
+     "c": "line",
+     "a": [
+      560,
+      315,
+      760,
+      315
+     ]
+    },
+    {
+     "c": "br",
+     "a": [
+      800,
+      315,
+      70,
+      90
+     ]
+    },
+    {
+     "c": "target",
+     "a": [
+      800,
+      603,
+      70,
+      90,
+      "PR #QUEUED",
+      "HOLD / GATE"
+     ],
+     "k": {
+      "side": "right"
+     }
+    },
+    {
+     "c": "ab",
+     "a": [
+      1020,
+      262,
+      "<div class=\"colh zh\" style=\"font-weight:400;font-size:26px\">Four stages · isolated credentials</div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      1020,
+      320,
+      "<div style=\"display:flex;gap:18px;align-items:center;width:520px;height:84px;border:1px solid @ink_rule@;background:@panel_strong@;padding:0 18px\"><div style=\"font:700 34px Inter;color:#fff\">01</div><div><div class=\"zh\" style=\"font-size:24px\">Prepare</div><div class=\"mono\" style=\"font-size:11px;opacity:.8;margin-top:4px\">REPO TOKEN ONLY</div></div></div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      1020,
+      424,
+      "<div style=\"display:flex;gap:18px;align-items:center;width:520px;height:84px;border:1px solid @accent@;background:@panel_strong@;padding:0 18px\"><div style=\"font:700 34px Inter;color:@accent@\">02</div><div><div class=\"zh\" style=\"font-size:24px\">Deps + security scan</div><div class=\"mono\" style=\"font-size:11px;opacity:.8;margin-top:4px\">NO CREDENTIALS</div></div></div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      1020,
+      528,
+      "<div style=\"display:flex;gap:18px;align-items:center;width:520px;height:84px;border:1px solid @ink_rule@;background:@panel_strong@;padding:0 18px\"><div style=\"font:700 34px Inter;color:#fff\">03</div><div><div class=\"zh\" style=\"font-size:24px\">Model review</div><div class=\"mono\" style=\"font-size:11px;opacity:.8;margin-top:4px\">MODEL GATEWAY KEY ONLY</div></div></div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      1020,
+      632,
+      "<div style=\"display:flex;gap:18px;align-items:center;width:520px;height:84px;border:1px solid @ink_rule@;background:@panel_strong@;padding:0 18px\"><div style=\"font:700 34px Inter;color:#fff\">04</div><div><div class=\"zh\" style=\"font-size:24px\">Publish</div><div class=\"mono\" style=\"font-size:11px;opacity:.8;margin-top:4px\">REPO TOKEN ONLY</div></div></div>"
+     ]
+    },
+    {
+     "c": "line",
+     "a": [
+      840,
+      315,
+      1010,
+      360
+     ],
+     "k": {
+      "dash": true
+     }
+    }
+   ]
+  },
+  {
+   "slot": "x.body",
+   "name": "fig3-three-convergence-paths",
+   "layout": "frame",
+   "photo": "campus.jpg",
+   "dim": 0.4,
+   "tag": "FIG-03",
+   "head": "One finding, three ways out",
+   "elements": [
+    {
+     "c": "node",
+     "a": [
+      190,
+      500,
+      "One finding",
+      "FINDING · P1"
+     ],
+     "k": {
+      "w": 200,
+      "orange": true
+     }
+    },
+    {
+     "c": "line",
+     "a": [
+      290,
+      500,
+      560,
+      330
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      1520,
+      290,
+      "<div class=\"mono\" style=\"font-size:11px;opacity:.6\">LANE 01</div>",
+      "transform:translateX(-100%)"
+     ]
+    },
+    {
+     "c": "node",
+     "a": [
+      680,
+      330,
+      "Author appeal",
+      "AUTHOR APPEAL"
+     ],
+     "k": {
+      "w": 220
+     }
+    },
+    {
+     "c": "line",
+     "a": [
+      790,
+      330,
+      1000,
+      330
+     ],
+     "k": {
+      "label": "→ CONVERGE"
+     }
+    },
+    {
+     "c": "node",
+     "a": [
+      1140,
+      330,
+      "Model re-checks on PR head",
+      "RE-CHECK @ HEAD"
+     ],
+     "k": {
+      "w": 260
+     }
+    },
+    {
+     "c": "raw",
+     "a": [
+      "<div class=\"hl\" style=\"top:330px;left:1270px;right:60px;background:rgba(255,255,255,.4)\"></div>"
+     ]
+    },
+    {
+     "c": "line",
+     "a": [
+      290,
+      500,
+      560,
+      500
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      1520,
+      460,
+      "<div class=\"mono\" style=\"font-size:11px;opacity:.6\">LANE 02</div>",
+      "transform:translateX(-100%)"
+     ]
+    },
+    {
+     "c": "node",
+     "a": [
+      680,
+      500,
+      "Maintainer ruling",
+      "MAINTAINER RULING"
+     ],
+     "k": {
+      "w": 220
+     }
+    },
+    {
+     "c": "line",
+     "a": [
+      790,
+      500,
+      1000,
+      500
+     ],
+     "k": {
+      "label": "→ CONVERGE"
+     }
+    },
+    {
+     "c": "node",
+     "a": [
+      1140,
+      500,
+      "Won't change + reason",
+      "WONTFIX + REASON"
+     ],
+     "k": {
+      "w": 260
+     }
+    },
+    {
+     "c": "raw",
+     "a": [
+      "<div class=\"hl\" style=\"top:500px;left:1270px;right:60px;background:rgba(255,255,255,.4)\"></div>"
+     ]
+    },
+    {
+     "c": "line",
+     "a": [
+      290,
+      500,
+      560,
+      670
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      1520,
+      630,
+      "<div class=\"mono\" style=\"font-size:11px;opacity:.6\">LANE 03</div>",
+      "transform:translateX(-100%)"
+     ]
+    },
+    {
+     "c": "node",
+     "a": [
+      680,
+      670,
+      "Defer P1",
+      "DEFER P1"
+     ],
+     "k": {
+      "w": 220
+     }
+    },
+    {
+     "c": "line",
+     "a": [
+      790,
+      670,
+      1000,
+      670
+     ],
+     "k": {
+      "label": "→ CONVERGE"
+     }
+    },
+    {
+     "c": "node",
+     "a": [
+      1140,
+      670,
+      "Into a qualifying issue",
+      "TRACKED ISSUE"
+     ],
+     "k": {
+      "w": 260
+     }
+    },
+    {
+     "c": "raw",
+     "a": [
+      "<div class=\"hl\" style=\"top:670px;left:1270px;right:60px;background:rgba(255,255,255,.4)\"></div>"
+     ]
+    },
+    {
+     "c": "br",
+     "a": [
+      1140,
+      330,
+      300,
+      110,
+      false
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      60,
+      740,
+      "<div style=\"width:1480px;height:44px;background:@accent@;display:flex;align-items:center;justify-content:space-between;padding:0 20px\"><span class=\"zh\" style=\"font-size:24px\">P0 can only be fixed</span><span class=\"mono\" style=\"font-size:13px\">P0 · FIX ONLY · NO APPEAL · NO DEFER</span></div>"
+     ]
+    }
+   ],
+   "tele": [
+    "",
+    ""
+   ],
+   "tele_y": 800
+  },
+  {
+   "slot": "x.body",
+   "name": "fig4-release-conditions",
+   "layout": "frame",
+   "photo": "campus.jpg",
+   "dim": 0.35,
+   "tag": "FIG-04",
+   "head": "Four conditions to release",
+   "elements": [
+    {
+     "c": "ab",
+     "a": [
+      60,
+      280,
+      "<div style=\"display:flex;align-items:center;width:900px;height:86px;border-bottom:1px solid rgba(255,255,255,.3)\"><div class=\"mono\" style=\"width:56px;height:56px;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:28px\">✓</div><div class=\"mono\" style=\"font-size:13px;opacity:.7;margin:0 24px\">01</div><div class=\"zh\" style=\"font-size:34px;flex:1\">8 required checks</div><div class=\"mono\" style=\"font-size:12px;opacity:.8;margin-right:16px\">8 REQUIRED CHECKS</div><div class=\"chip\" style=\"font-size:13px\">PASS</div></div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      60,
+      390,
+      "<div style=\"display:flex;align-items:center;width:900px;height:86px;border-bottom:1px solid rgba(255,255,255,.3)\"><div class=\"mono\" style=\"width:56px;height:56px;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:28px\">✓</div><div class=\"mono\" style=\"font-size:13px;opacity:.7;margin:0 24px\">02</div><div class=\"zh\" style=\"font-size:34px;flex:1\">No P0 · P1</div><div class=\"mono\" style=\"font-size:12px;opacity:.8;margin-right:16px\">NO OPEN P0 / P1</div><div class=\"chip\" style=\"font-size:13px\">PASS</div></div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      60,
+      500,
+      "<div style=\"display:flex;align-items:center;width:900px;height:86px;border-bottom:1px solid rgba(255,255,255,.3)\"><div class=\"mono\" style=\"width:56px;height:56px;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:28px\">✓</div><div class=\"mono\" style=\"font-size:13px;opacity:.7;margin:0 24px\">03</div><div class=\"zh\" style=\"font-size:34px;flex:1\">All threads resolved</div><div class=\"mono\" style=\"font-size:12px;opacity:.8;margin-right:16px\">ALL THREADS RESOLVED</div><div class=\"chip\" style=\"font-size:13px\">PASS</div></div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      60,
+      610,
+      "<div style=\"display:flex;align-items:center;width:900px;height:86px;border-bottom:1px solid rgba(255,255,255,.3)\"><div class=\"mono\" style=\"width:56px;height:56px;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:28px\">✓</div><div class=\"mono\" style=\"font-size:13px;opacity:.7;margin:0 24px\">04</div><div class=\"zh\" style=\"font-size:34px;flex:1\">Maintainer merges</div><div class=\"mono\" style=\"font-size:12px;opacity:.8;margin-right:16px\">DESIGNATED MAINTAINER MERGE</div><div class=\"chip\" style=\"font-size:13px\">PASS</div></div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      1080,
+      270,
+      "<div class=\"chipw\">SIDE NOTE</div><br><div class=\"chip\" style=\"display:inline-block;margin-top:6px\">OVERRIDE</div><div class=\"zh\" style=\"font-size:24px;margin-top:16px;line-height:1.5\">Emergency override needs<br>a written reason</div><div class=\"mono\" style=\"font-size:11px;opacity:.75;margin-top:8px\">WRITTEN REASON · PATROL REMINDER</div>"
+     ]
+    },
+    {
+     "c": "ab",
+     "a": [
+      1060,
+      520,
+      "<div class=\"giant\" style=\"font-size:250px\">8/8</div>"
+     ]
+    }
+   ]
+  }
+ ]
+}

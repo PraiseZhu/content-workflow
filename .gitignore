@@ -1,0 +1,32 @@
+# secrets — never commit
+config.yaml
+!config.example.yaml
+*.secret
+*secret*
+!**/*secret*.md
+.env
+.env.*
+*token*.json
+*.pem
+*.key
+.secrets/
+config/private-names.txt
+history.yaml
+# python / node
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+node_modules/
+# outputs
+output/
+preview/
+images/
+render/html/
+*.bak*
+*.png
+*.jpg
+*.jpeg
+*.pdf
+.DS_Store

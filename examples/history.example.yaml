@@ -1,0 +1,21 @@
+# history.yaml 示例（已脱敏；真实文件只在本地 ${CONTENT_ROOT}/history.yaml）
+articles:
+  - date: "2026-01-01"
+    slug: example-slug
+    title: "示例标题"
+    title_en: "Example title"
+    tags: [AI 协作, 组织机制]
+    theme: claude-warm
+    publish_file: output/2026-01-01-example-slug.md
+    wechat:
+      draft_media_id: "<WECHAT_DRAFT_MEDIA_ID>"
+      cover: assets/example-slug/cover-wechat-2350x1000.png
+      status: draft        # draft | published
+      published_at: null
+    x:
+      article_id: "<X_ARTICLE_ID>"
+      status: draft
+    humanness_score: 24
+    stats_7d:              # 发布满一周后回填
+      wechat: {read: 0, like: 0, share: 0, favorite: 0}
+      x: {impressions: 0, likes: 0, reposts: 0, bookmarks: 0}

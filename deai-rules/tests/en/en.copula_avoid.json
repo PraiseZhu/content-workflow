@@ -1,0 +1,9 @@
+{
+ "rule": "en.copula_avoid",
+ "hit": [
+  "The bot serves as a gatekeeper."
+ ],
+ "miss": [
+  "The bot is a gatekeeper."
+ ]
+}

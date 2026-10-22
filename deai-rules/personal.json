@@ -1,0 +1,47 @@
+{
+ "version": "2026-10-18",
+ "note": "个人规则；私名和术语表在数据层（--names / --glossary），这里不放任何具体名字",
+ "data_defaults": {
+  "names": "config/private-names.txt",
+  "glossary": "config/glossary.json"
+ },
+ "rules": [
+  {
+   "id": "p.leak.names",
+   "severity": "ban",
+   "kind": "names",
+   "scope": "all",
+   "limit": 0,
+   "fix": "换成泛称（例：一套自动化 QA 系统）",
+   "source": "playbook R002",
+   "added": "2026-10-18",
+   "fp_notes": "",
+   "allow": []
+  },
+  {
+   "id": "p.jargon_first_use",
+   "severity": "ban",
+   "kind": "jargon",
+   "scope": "body",
+   "limit": 0,
+   "fix": "第一次出现时在 30 字内给出解释或中英对照",
+   "source": "作者 10-12「很多词看不懂」",
+   "added": "2026-10-18",
+   "fp_notes": "",
+   "allow": [],
+   "window": 30
+  },
+  {
+   "id": "p.locked_lines",
+   "severity": "ban",
+   "kind": "locked",
+   "scope": "all",
+   "limit": 0,
+   "fix": "锁定行必须逐字保留",
+   "source": "DEAI-DESIGN §2.3",
+   "added": "2026-10-18",
+   "fp_notes": "",
+   "allow": []
+  }
+ ]
+}

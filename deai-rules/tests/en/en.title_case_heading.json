@@ -1,0 +1,9 @@
+{
+ "rule": "en.title_case_heading",
+ "hit": [
+  "## Why Reviews Get Slower Over Time\n\nText."
+ ],
+ "miss": [
+  "## Why reviews get slower over time\n\nText."
+ ]
+}

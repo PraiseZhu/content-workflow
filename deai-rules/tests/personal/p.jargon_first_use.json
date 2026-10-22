@@ -1,0 +1,11 @@
+{
+ "rule": "p.jargon_first_use",
+ "glossary": "deai-rules/tests/personal/glossary.fixture.json",
+ "lang": "zh",
+ "hit": [
+  "这次SLA没达标，大家都很紧张，连续加班了好几天才搞定这个问题。"
+ ],
+ "miss": [
+  "这次SLA（服务等级协议）没达标。"
+ ]
+}

@@ -1,0 +1,240 @@
+{
+ "run_at": "2026-10-18T22:21:58+08:00",
+ "rules_version": {
+  "zh": "2026-10-18.3",
+  "en": "2026-10-18",
+  "personal": "2026-10-18"
+ },
+ "pass_set_n": 3,
+ "fail_set_n": 4,
+ "pass_rate": 0.667,
+ "catch_rate": 1.0,
+ "fail_min2_bans": true,
+ "targets": {
+  "pass_rate": 1.0,
+  "catch_rate": 0.9,
+  "status": "PROVISIONAL"
+ },
+ "rows": [
+  {
+   "file": "${ARTICLES_DIR}/early-human/brand-1.md",
+   "set": "pass",
+   "lang": "zh",
+   "hard_bans": 0,
+   "rules": [],
+   "gate_pass_lint": true
+  },
+  {
+   "file": "${ARTICLES_DIR}/early-human/brand-2.md",
+   "set": "pass",
+   "lang": "zh",
+   "hard_bans": 0,
+   "rules": [],
+   "gate_pass_lint": true
+  },
+  {
+   "file": "${ARTICLES_DIR}/early-human/visual-competitive-analysis.md",
+   "set": "pass",
+   "lang": "zh",
+   "hard_bans": 1,
+   "rules": [
+    "zh.contrast.bu_shi_er_shi"
+   ],
+   "gate_pass_lint": false
+  },
+  {
+   "file": "${WORKSPACE}/writing-qa/2026-10-11-automated-qa.md",
+   "set": "fail",
+   "lang": "zh",
+   "hard_bans": 11,
+   "rules": [
+    "p.jargon_first_use",
+    "p.leak.names",
+    "zh.bold_count",
+    "zh.bold_label_list",
+    "zh.contrast.zhi_qian",
+    "zh.fake_candor",
+    "zh.loose_layout"
+   ],
+   "gate_pass_lint": false
+  },
+  {
+   "file": "${WORKSPACE}/idea-outline-2026-10-11/2026-10-11-automated-qa-v2.md",
+   "set": "fail",
+   "lang": "zh",
+   "hard_bans": 20,
+   "rules": [
+    "p.jargon_first_use",
+    "p.leak.names",
+    "zh.bold_count",
+    "zh.bold_label_list",
+    "zh.contrast.zhi_qian",
+    "zh.disclaimer",
+    "zh.drift_verbs.cluster",
+    "zh.fake_candor",
+    "zh.loose_layout",
+    "zh.signpost"
+   ],
+   "gate_pass_lint": false
+  },
+  {
+   "file": "${WORKSPACE}/writing-qa/2026-10-11-automated-qa-v3.md",
+   "set": "fail",
+   "lang": "zh",
+   "hard_bans": 13,
+   "rules": [
+    "p.jargon_first_use",
+    "p.leak.names",
+    "zh.bold_count",
+    "zh.bold_label_list",
+    "zh.contrast.zhi_qian",
+    "zh.disclaimer",
+    "zh.drift_verbs.cluster",
+    "zh.fake_candor",
+    "zh.loose_layout"
+   ],
+   "gate_pass_lint": false
+  },
+  {
+   "file": "deai-rules/calibration/fixtures/fake-human-zh.md",
+   "set": "fail",
+   "lang": "zh",
+   "hard_bans": 4,
+   "rules": [
+    "zh.contrast.bu_shi_er_shi",
+    "zh.fake_candor",
+    "zh.generic_close"
+   ],
+   "gate_pass_lint": false
+  }
+ ],
+ "per_rule": {
+  "zh.cjk_latin_space": {
+   "severity": "warn",
+   "pass_hits": 4,
+   "fail_hits": 0,
+   "fp_rate": 1.0,
+   "flag": ""
+  },
+  "zh.parallel_pair": {
+   "severity": "warn",
+   "pass_hits": 1,
+   "fail_hits": 5,
+   "fp_rate": 0.17,
+   "flag": ""
+  },
+  "zh.contrast.bu_shi_er_shi": {
+   "severity": "ban",
+   "pass_hits": 1,
+   "fail_hits": 1,
+   "fp_rate": 0.5,
+   "flag": "降为 warn 候选（FP>20%）"
+  },
+  "zh.translationese": {
+   "severity": "warn",
+   "pass_hits": 1,
+   "fail_hits": 0,
+   "fp_rate": 1.0,
+   "flag": ""
+  },
+  "zh.essence_anchor": {
+   "severity": "warn",
+   "pass_hits": 1,
+   "fail_hits": 1,
+   "fp_rate": 0.5,
+   "flag": ""
+  },
+  "zh.contrast.zhi_qian": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 3,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "zh.fake_candor": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 4,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "zh.bold_label_list": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 3,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "zh.bold_count": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 3,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "zh.loose_layout": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 4,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "p.leak.names": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 10,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "p.jargon_first_use": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 9,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "zh.drift_verbs.single": {
+   "severity": "warn",
+   "pass_hits": 0,
+   "fail_hits": 12,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "zh.drift_verbs.cluster": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 2,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "zh.signpost": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 3,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "zh.disclaimer": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 4,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "zh.signpost.xian_shuo_jie_lun": {
+   "severity": "warn",
+   "pass_hits": 0,
+   "fail_hits": 1,
+   "fp_rate": 0.0,
+   "flag": ""
+  },
+  "zh.generic_close": {
+   "severity": "ban",
+   "pass_hits": 0,
+   "fail_hits": 2,
+   "fp_rate": 0.0,
+   "flag": ""
+  }
+ },
+ "meets_line": false
+}

@@ -1,0 +1,9 @@
+{
+ "rule": "en.bold_label_list",
+ "hit": [
+  "- **Label 0.** text\n- **Label 1.** text\n- **Label 2.** text\n- **Label 3.** text\n- **Label 4.** text\n- **Label 5.** text\n- **Label 6.** text\n- **Label 7.** text"
+ ],
+ "miss": [
+  "- item 0\n- item 1\n- item 2\n- item 3\n- item 4\n- item 5\n- item 6\n- item 7"
+ ]
+}

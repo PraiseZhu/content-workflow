@@ -1,0 +1,65 @@
+{
+ "style": "dark-grid-photo",
+ "style_version": "2026-10-18",
+ "sizes_version": "2026-10-18",
+ "template_version": "2026-10-18",
+ "rendered_at": "2026-10-18T21:34:43+08:00",
+ "images": {
+  "cover-wechat-2350x1000.png": {
+   "slot": "wechat.cover",
+   "w": 2350,
+   "h": 1000,
+   "bytes": 2857090,
+   "sha256": "70d9f9dd1bfa7100e570fc5269babb194712b858580e9ac8649562fc000cd99e",
+   "notes": []
+  },
+  "fig1-consensus-vs-verification.png": {
+   "slot": "wechat.body",
+   "w": 1600,
+   "h": 900,
+   "bytes": 1415702,
+   "sha256": "1d9a53b3f1a6ab6e41fe3967c2987d96c85b3e8e06e762620c1b053812b8b286",
+   "notes": [
+    "convert to JPG q85 before upload"
+   ]
+  },
+  "fig2-gates-to-isolated-stages.png": {
+   "slot": "wechat.body",
+   "w": 1600,
+   "h": 900,
+   "bytes": 2055098,
+   "sha256": "ff1fab4524d1106fbc90e268549262e9e277db0d0ed0b82d57a441bf9eb75b03",
+   "notes": [
+    "convert to JPG q85 before upload"
+   ]
+  },
+  "fig3-three-convergence-paths.png": {
+   "slot": "wechat.body",
+   "w": 1600,
+   "h": 900,
+   "bytes": 1291869,
+   "sha256": "fd86a459226afd5a1159843ec9f331ba42b66123e4686c6c3e7745ba411bc9bf",
+   "notes": [
+    "convert to JPG q85 before upload"
+   ]
+  },
+  "fig4-release-conditions.png": {
+   "slot": "wechat.body",
+   "w": 1600,
+   "h": 900,
+   "bytes": 1250473,
+   "sha256": "aaf5812927ea4b391771a28b8eee6d82ba4b5dcbda3b91195d563a8564c8f67c",
+   "notes": [
+    "convert to JPG q85 before upload"
+   ]
+  },
+  "cover-square-1000x1000.png": {
+   "slot": "wechat.square",
+   "w": 1000,
+   "h": 1000,
+   "bytes": 1282717,
+   "sha256": "c270bec619fd0f39654ee879199779484548c29e0a58db1c944cf05fbb1d627f",
+   "notes": []
+  }
+ }
+}

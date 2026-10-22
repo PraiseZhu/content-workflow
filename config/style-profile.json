@@ -1,0 +1,76 @@
+{
+ "version": "2026-10-18",
+ "source": "calibration/pass.txt only",
+ "n": 3,
+ "metrics": {
+  "paragraph_cv": {
+   "mean": 0.96,
+   "sd": 0.163
+  },
+  "sent_len_mean": {
+   "mean": 32.033,
+   "sd": 1.541
+  },
+  "sent_len_sd": {
+   "mean": 19.267,
+   "sd": 1.406
+  },
+  "colon_per_k": {
+   "mean": 2.903,
+   "sd": 1.98
+  },
+  "bold_per_k": {
+   "mean": 0.0,
+   "sd": 0.0
+  },
+  "list_per_k": {
+   "mean": 0.0,
+   "sd": 0.0
+  },
+  "formal_conj_per_k": {
+   "mean": 2.663,
+   "sd": 1.763
+  },
+  "bold_label_ratio": {
+   "mean": 0.0,
+   "sd": 0.0
+  }
+ },
+ "per_file": [
+  {
+   "file": "${ARTICLES_DIR}/early-human/brand-1.md",
+   "paragraph_cv": 1.08,
+   "sent_len_mean": 31.6,
+   "sent_len_sd": 17.9,
+   "colon_per_k": 1.38,
+   "bold_per_k": 0.0,
+   "list_per_k": 0.0,
+   "formal_conj_per_k": 4.59,
+   "bold_label_ratio": 0.0
+  },
+  {
+   "file": "${ARTICLES_DIR}/early-human/brand-2.md",
+   "paragraph_cv": 0.73,
+   "sent_len_mean": 34.1,
+   "sent_len_sd": 18.7,
+   "colon_per_k": 1.63,
+   "bold_per_k": 0.0,
+   "list_per_k": 0.0,
+   "formal_conj_per_k": 0.33,
+   "bold_label_ratio": 0.0
+  },
+  {
+   "file": "${ARTICLES_DIR}/early-human/visual-competitive-analysis.md",
+   "paragraph_cv": 1.07,
+   "sent_len_mean": 30.4,
+   "sent_len_sd": 21.2,
+   "colon_per_k": 5.7,
+   "bold_per_k": 0.0,
+   "list_per_k": 0.0,
+   "formal_conj_per_k": 3.07,
+   "bold_label_ratio": 0.0
+  }
+ ],
+ "use": "偏离均值 >1.5σ 记 warn，作为 R7 输入；不进门槛",
+ "status": "ok"
+}

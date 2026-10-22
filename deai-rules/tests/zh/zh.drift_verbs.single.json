@@ -1,0 +1,9 @@
+{
+ "rule": "zh.drift_verbs.single",
+ "hit": [
+  "最后由人工兜底。"
+ ],
+ "miss": [
+  "最后由人工复核。"
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "rule": "en.staccato",
+ "hit": [
+  "It fails. Nobody notices. Then it ships. After that the customer finds the bug in production and files a ticket."
+ ],
+ "miss": [
+  "The check fails on the first run and we rerun the same commit before calling it."
+ ]
+}

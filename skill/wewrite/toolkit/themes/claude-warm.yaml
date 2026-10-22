@@ -1,0 +1,210 @@
+name: "claude-warm"
+description: "Claude 品牌赤陶橙调，编辑感排版，专为公众号扫读优化"
+colors:
+  primary: "#D4654A"
+  secondary: "#B8533C"
+  text: "#2A2A2A"
+  text_light: "#6B6B6B"
+  background: "#ffffff"
+  code_bg: "#FAF4EE"
+  code_color: "#B8533C"
+  quote_border: "#D4654A"
+  quote_bg: "#FBF6F2"
+  border_radius: "6px"
+  darkmode:
+    background: "#1a1a1a"
+    text: "#E8DDD3"
+    text_light: "#A89A8C"
+    primary: "#E07A5F"
+    code_bg: "#2a2520"
+    code_color: "#E07A5F"
+    quote_bg: "#2a2520"
+    quote_border: "#E07A5F"
+base_css: |
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.85;
+    color: #2A2A2A;
+    background: #ffffff;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+    word-wrap: break-word;
+    letter-spacing: 0.3px;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 36px 0 24px 0;
+    padding-bottom: 14px;
+    border-bottom: 3px solid #D4654A;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+  }
+
+  h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 40px 0 18px 0;
+    padding: 4px 0 4px 14px;
+    border-left: 5px solid #D4654A;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #B8533C;
+    margin: 28px 0 14px 0;
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #B8533C;
+    margin: 22px 0 12px 0;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #2A2A2A;
+    margin: 18px 0;
+    letter-spacing: 0.3px;
+  }
+
+  strong {
+    font-weight: 700;
+    color: #D4654A;
+    border-bottom: 2px solid #FBE5DC;
+    padding-bottom: 1px;
+  }
+
+  em {
+    font-style: italic;
+    color: #6B6B6B;
+  }
+
+  code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 14px;
+    background: #FAF4EE;
+    color: #B8533C;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  pre {
+    background: #FAF4EE;
+    color: #B8533C;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 20px 0;
+    line-height: 1.6;
+    border: 1px solid #F0E4D8;
+  }
+
+  pre code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 14px;
+    background: none;
+    color: #B8533C;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  blockquote {
+    border-left: 5px solid #D4654A;
+    background: #FBF6F2;
+    margin: 24px 0;
+    padding: 16px 20px;
+    border-radius: 0 6px 6px 0;
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  blockquote p {
+    margin: 6px 0;
+    color: #4A4A4A;
+    font-style: italic;
+  }
+
+  ul {
+    padding-left: 24px;
+    margin: 16px 0;
+  }
+
+  ol {
+    padding-left: 24px;
+    margin: 16px 0;
+  }
+
+  li {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #2A2A2A;
+    margin: 8px 0;
+    letter-spacing: 0.3px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 15px;
+  }
+
+  thead {
+    background: #D4654A;
+  }
+
+  th {
+    background: #D4654A;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 14px;
+    text-align: left;
+    border: 1px solid #D4654A;
+  }
+
+  td {
+    padding: 10px 14px;
+    border: 1px solid #F0E4D8;
+    color: #2A2A2A;
+  }
+
+  tr {
+    background: #ffffff;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 32px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  a {
+    color: #D4654A;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid #FBE5DC;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #F0E4D8;
+    margin: 32px 0;
+    text-align: center;
+  }

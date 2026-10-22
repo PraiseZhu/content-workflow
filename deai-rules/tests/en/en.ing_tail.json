@@ -1,0 +1,9 @@
+{
+ "rule": "en.ing_tail",
+ "hit": [
+  "The test passed, highlighting the gap."
+ ],
+ "miss": [
+  "The test passed. The gap stayed."
+ ]
+}

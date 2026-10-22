@@ -1,0 +1,30 @@
+{
+  "name": "dark-grid-photo",
+  "version": "2026-10-18",
+  "template": "article-image-template",
+  "description": "Deep green-black, duotone-tinted photo, thin white grid, one orange accent, mono telemetry labels, film grain.",
+  "css": "tokens.css",
+  "fonts": {"latin": "Inter", "mono": "JetBrains Mono", "zh": "Noto Sans CJK SC"},
+  "palette": {
+    "accent": "#FF5A1F",
+    "accent_soft": "#FF8A5C",
+    "bg": "#04120e",
+    "fade": "rgba(4,18,14,0)",
+    "panel": "rgba(4,18,14,.55)",
+    "panel_strong": "rgba(4,18,14,.6)",
+    "shade_rgb": "3,14,11",
+    "ink": "rgba(255,255,255,.9)",
+    "ink_line": "rgba(255,255,255,.75)",
+    "ink_dim": "rgba(255,255,255,.7)",
+    "ink_tele": "rgba(255,255,255,.8)",
+    "ink_rule": "rgba(255,255,255,.35)"
+  },
+  "frame": {
+    "grid_cols": [60, 380, 700, 1020, 1340, 1540],
+    "grid_rows": [70, 240, 760],
+    "nav_x": [60, 380, 700, 1020, 1340],
+    "nav_y": 30,
+    "scale": 0.8
+  },
+  "refs": "refs/ (finished 2026-10-17 set, zh + en)"
+}

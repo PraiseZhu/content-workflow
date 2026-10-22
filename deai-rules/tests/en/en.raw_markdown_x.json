@@ -1,0 +1,10 @@
+{
+ "rule": "en.raw_markdown_x",
+ "x": true,
+ "hit": [
+  "Ship it **today**."
+ ],
+ "miss": [
+  "Ship it today."
+ ]
+}

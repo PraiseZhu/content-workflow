@@ -1,0 +1,9 @@
+{
+ "rule": "zh.signpost.xian_shuo_jie_lun",
+ "hit": [
+  "先说结论：可以上线。"
+ ],
+ "miss": [
+  "结论是可以上线。"
+ ]
+}

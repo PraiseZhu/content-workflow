@@ -1,0 +1,49 @@
+{
+ "style": "dark-grid-photo",
+ "style_version": "2026-10-18",
+ "sizes_version": "2026-10-18",
+ "template_version": "2026-10-18",
+ "rendered_at": "2026-10-18T21:34:53+08:00",
+ "images": {
+  "header-x-2000x800.png": {
+   "slot": "x.article_header",
+   "w": 2000,
+   "h": 800,
+   "bytes": 1793563,
+   "sha256": "b61d48c3aa9fc8481d3bc8132c504c2060283eb1b07f98f2e9280280942bca57",
+   "notes": []
+  },
+  "fig1-consensus-vs-verification.png": {
+   "slot": "x.body",
+   "w": 1600,
+   "h": 900,
+   "bytes": 1415579,
+   "sha256": "887b33520b853aa8ac22fbc383294162a82b8158074f099edfd0febdcd719bb7",
+   "notes": []
+  },
+  "fig2-gates-to-isolated-stages.png": {
+   "slot": "x.body",
+   "w": 1600,
+   "h": 900,
+   "bytes": 2058411,
+   "sha256": "1d4fc452796ecdf655a5bedae02fcf7918409c160df31ba570f21bb0d6aff8a0",
+   "notes": []
+  },
+  "fig3-three-convergence-paths.png": {
+   "slot": "x.body",
+   "w": 1600,
+   "h": 900,
+   "bytes": 1299475,
+   "sha256": "ecb1dc79acfcf970ec0858afb697fac2c8d1e63e16024c7a9991473a5956cedb",
+   "notes": []
+  },
+  "fig4-release-conditions.png": {
+   "slot": "x.body",
+   "w": 1600,
+   "h": 900,
+   "bytes": 1252668,
+   "sha256": "0cd8e1ede5d12dd83c1166d60ca362e6e8efe849a4b24dda959b6dc49523734b",
+   "notes": []
+  }
+ }
+}

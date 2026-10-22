@@ -1,0 +1,37 @@
+{
+  "version": "2026-10-18",
+  "doc": "TEMPLATE.md",
+  "sizes": "specs/image-sizes/sizes.json",
+  "required_set": {
+    "zh": ["wechat.cover", "wechat.square", "wechat.body"],
+    "en": ["x.article_header", "x.body"]
+  },
+  "layouts": {
+    "hero":   {"for": ["wechat.cover", "x.article_header"],
+               "fields": {"scale": "number", "photo": "file in photos/", "geom": "per-size geometry (cols, rows, orule, ovl, navx, navy, tagx, tagy, tgt[x,y,w,h], side, tx, ty, tfs, dx, dy, colx, chy, ly, gx, gy, gfs)",
+                          "text": {"nav": "5 short labels", "tag": "[ CODE ]", "tele": "3 telemetry lines", "target_chip": "chip on target", "target_sub": "label above chip",
+                                   "title_html": "article title, verbatim", "deck_mark": "glyph", "deck_html": "one-line thesis", "deck_sub": "small latin line",
+                                   "columns": "4 × [heading, [4 list lines]]", "giant": "core symbol / number"}}},
+    "frame":  {"for": ["wechat.body", "x.body"],
+               "fields": {"name": "figN-slug", "photo": "file in photos/", "dim": "0..1 photo strength", "tag": "FIG-0N", "head": "figure headline",
+                          "elements": "list of elements", "tele": "optional 2 lines (else file-level tele)", "tele_y": "default 790"}},
+    "canvas": {"for": ["wechat.square", "wechat.newspic"],
+               "fields": {"scale": "number", "elements": "list of elements (must include its own photo/grid)"},
+               "rule": "wechat.square carries no title: one core symbol + target only"}
+  },
+  "elements": {
+    "ab":     "[x, y, html, style?] absolutely placed HTML",
+    "node":   "[x, y, label, sub] k: w, orange, center",
+    "line":   "[x1, y1, x2, y2] k: orange, dash, label",
+    "br":     "[x, y, w, h, plus?] corner-bracket target",
+    "target": "[x, y, w, h, chip, sub] k: side",
+    "raw":    "[html] (rules/bars)",
+    "photo":  "[src, left, top, width, dim?]",
+    "grid":   "[cols[], rows[]]",
+    "tele":   "[x, y, lines[], fs?]",
+    "prog":   "[x, y, w, p?, fs?]",
+    "nav":    "[items[], xs[], y, style?]"
+  },
+  "tokens": "string args may use @name@ for any style.json palette entry (e.g. @accent@)",
+  "file_level": {"nav": "frame nav labels", "tele": "default frame telemetry lines"}
+}

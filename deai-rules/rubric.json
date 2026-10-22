@@ -1,0 +1,16 @@
+{"version":"2026-10-18",
+ "instructions":"你是评审，只标问题不改稿。逐个维度给出 pass / fail / needs_author。判 fail 必须给 evidence（稿子里逐字存在的原文）和 rewrite（一句具体改法），缺任何一项会被脚本作废。R8 缺料只能判 needs_author 并写 where，不许替作者编料。锁定行不得建议改写。",
+ "outline_dims":["R1.thesis","R2.structure","R8.substance"],
+ "voice_anchors_path":"config/voice-anchors.md",
+ "dimensions":[
+  {"id":"R1.thesis","question":"是否有一个拔高的核心论点，讲组织或机制怎么运转","pass":"中文前300字/英文前3句给出论点，且不是工具清单","evidence":"论点句；fail 时说明缺什么"},
+  {"id":"R2.structure","question":"钩子→论点→论证递进→落地动作","pass":"段落不能随意互换；无预告段/复述段；各 H2 篇幅不等长","evidence":"反向大纲 + 可互换的两段"},
+  {"id":"R3.one_idea","question":"一句话里是否塞了两个判断","pass":"全文 ≤2 处","evidence":"原句 + 拆成两句"},
+  {"id":"R4.claims","question":"夸大、绝对化、无出处数字","pass":"数字可在事实账本找到；绝对化说法有依据或已收窄","evidence":"原句 + 收窄写法"},
+  {"id":"R5.register","question":"标准技术书面语：不翻译腔、不纯口语、不装人味","pass":"无口头禅堆叠、表演式纠错、生造比喻、翻译腔","evidence":"原句 + 改写"},
+  {"id":"R6.jargon","question":"术语解释是否正确、叫法是否统一","pass":"同一概念全文只用一种叫法","evidence":"不一致的叫法列表"},
+  {"id":"R7.voice","question":"与作者终稿锚点比：开头、判断位置、收尾","pass":"没有锚点中从未出现的手法（只能拿锚点原文对比）","evidence":"新稿句 + 锚点对应句"},
+  {"id":"R8.substance","question":"每个 H2 是否有只有作者能写的东西","pass":"每个 H2 至少一个可核对锚点，至少一处代价或适用边界","evidence":"每个 H2 的锚点；缺的标 needs_author"}
+ ],
+ "output_schema":"{\"rubric\":[{\"dim\":\"R3.one_idea\",\"result\":\"pass|fail|needs_author\",\"evidence\":\"原文\",\"rewrite\":\"一句改法\",\"where\":\"H2#3（needs_author 时）\"}]}",
+ "stability":"同一篇判 3 次，各维度一致率 ≥80%；不到的维度改定义或拆窄"}

@@ -1,0 +1,5 @@
+# 校准 fail 集：已知 AI 味稿（每行一个绝对路径）
+${WORKSPACE}/writing-qa/2026-10-11-automated-qa.md
+${WORKSPACE}/idea-outline-2026-10-11/2026-10-11-automated-qa-v2.md
+${WORKSPACE}/writing-qa/2026-10-11-automated-qa-v3.md
+deai-rules/calibration/fixtures/fake-human-zh.md

@@ -1,0 +1,9 @@
+{
+ "rule": "zh.cjk_latin_space",
+ "hit": [
+  "我们用 GitHub 做协作。"
+ ],
+ "miss": [
+  "我们用GitHub做协作。"
+ ]
+}

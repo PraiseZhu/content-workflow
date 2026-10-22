@@ -1,0 +1,11 @@
+{
+ "rule": "p.locked_lines",
+ "article": "deai-rules/tests/personal/article.fixture.yaml",
+ "lang": "zh",
+ "hit": [
+  "结尾：能把底托住的机制，是团队的速度。"
+ ],
+ "miss": [
+  "结尾：能把底托住的机制，才是团队的速度。"
+ ]
+}

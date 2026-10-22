@@ -1,0 +1,9 @@
+{
+ "rule": "en.negative_parallel.broad",
+ "hit": [
+  "We chose speed rather than coverage."
+ ],
+ "miss": [
+  "We chose speed over coverage."
+ ]
+}

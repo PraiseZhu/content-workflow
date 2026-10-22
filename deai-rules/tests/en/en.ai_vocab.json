@@ -1,0 +1,9 @@
+{
+ "rule": "en.ai_vocab",
+ "hit": [
+  "We delve into the landscape."
+ ],
+ "miss": [
+  "We look at the numbers."
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "rule": "en.disclaimer",
+ "hit": [
+  "This post is AI-assisted."
+ ],
+ "miss": [
+  "This post took a weekend."
+ ]
+}

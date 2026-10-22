@@ -1,0 +1,9 @@
+{"version":"2026-10-18","note":"待作者 删改。首次出现需 30 字内解释/中英对照的术语；explain 里放可接受的解释词",
+ "terms":[
+  {"term":"PR","explain":["合并请求","代码改动","Pull Request"]},
+  {"term":"P0","explain":["最严重","阻断","级别"]},
+  {"term":"E2E","explain":["端到端"]},
+  {"term":"eval","explain":["评测"]},
+  {"term":"CI","explain":["持续集成"]},
+  {"term":"QA","explain":["质量保障","测试","品控"]}
+ ]}
